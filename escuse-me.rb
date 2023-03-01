@@ -5,20 +5,20 @@
 class EscuseMe < Formula
   desc "Escuse-me is a tool for querying elasticsearch"
   homepage "https://github.com/go-go-golems/escuse-me"
-  version "0.0.6"
+  version "0.0.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.6/biberon_0.0.6_Darwin_x86_64.tar.gz"
-      sha256 "0a3e71cbed16d1ea7a8251137b7c2bbee9af39a9176e9d9af905cbddf6a4df46"
+      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.7/biberon_0.0.7_Darwin_x86_64.tar.gz"
+      sha256 "8f361296f93c1e9c98bcb79a9759c8a449b32c086ddcb3774b9e7bd45bdbad6c"
 
       def install
         bin.install "escuse-me"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.6/biberon_0.0.6_Darwin_arm64.tar.gz"
-      sha256 "c9ca272016412b81fea6997f599494c1d290fdb76c19cb34a916fb31d902eb54"
+      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.7/biberon_0.0.7_Darwin_arm64.tar.gz"
+      sha256 "49e31a0d937544ea03eba2e916fe0246072f94196a0e83f56f913aac9cbb390a"
 
       def install
         bin.install "escuse-me"
@@ -28,16 +28,16 @@ class EscuseMe < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.6/biberon_0.0.6_Linux_arm64.tar.gz"
-      sha256 "367408ed59869fb248b55b23607eee5457c85ccaa3aaadef0179b5dc73f493c2"
+      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.7/biberon_0.0.7_Linux_arm64.tar.gz"
+      sha256 "a167a1f9d6738453e029d45a0c1c3036523f61e16a2a1b7c7971f68eb19766d9"
 
       def install
         bin.install "escuse-me"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.6/biberon_0.0.6_Linux_x86_64.tar.gz"
-      sha256 "ab3c02feae855540b9326f795e8d0153bca95802893a3e7ae28c5fe2f236adc4"
+      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.7/biberon_0.0.7_Linux_x86_64.tar.gz"
+      sha256 "9ca231bc545fe319f8c24237734fa7bf783ee8fe495e303d3140cc2e5ce53ba2"
 
       def install
         bin.install "escuse-me"
