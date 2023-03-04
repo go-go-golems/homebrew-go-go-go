@@ -5,20 +5,20 @@
 class EscuseMe < Formula
   desc "Escuse-me is a tool for querying elasticsearch"
   homepage "https://github.com/go-go-golems/escuse-me"
-  version "0.0.7"
+  version "0.0.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.7/biberon_0.0.7_Darwin_x86_64.tar.gz"
-      sha256 "8f361296f93c1e9c98bcb79a9759c8a449b32c086ddcb3774b9e7bd45bdbad6c"
+      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.8/biberon_0.0.8_Darwin_x86_64.tar.gz"
+      sha256 "6eef92a18c258abd60fdf96062a9cd911f564e60842bd35239087dab37383205"
 
       def install
         bin.install "escuse-me"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.7/biberon_0.0.7_Darwin_arm64.tar.gz"
-      sha256 "49e31a0d937544ea03eba2e916fe0246072f94196a0e83f56f913aac9cbb390a"
+      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.8/biberon_0.0.8_Darwin_arm64.tar.gz"
+      sha256 "d5566fe2e17dd1da15088e2ec8a79dbc36bf4ccc1d476030a37ff94a0ff11f69"
 
       def install
         bin.install "escuse-me"
@@ -27,17 +27,17 @@ class EscuseMe < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.7/biberon_0.0.7_Linux_arm64.tar.gz"
-      sha256 "a167a1f9d6738453e029d45a0c1c3036523f61e16a2a1b7c7971f68eb19766d9"
+    if Hardware::CPU.intel?
+      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.8/biberon_0.0.8_Linux_x86_64.tar.gz"
+      sha256 "190aef1b9ab404913cc617dd6be1b04a951ec884d75c79a02b67f27a00889fd6"
 
       def install
         bin.install "escuse-me"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.7/biberon_0.0.7_Linux_x86_64.tar.gz"
-      sha256 "9ca231bc545fe319f8c24237734fa7bf783ee8fe495e303d3140cc2e5ce53ba2"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.8/biberon_0.0.8_Linux_arm64.tar.gz"
+      sha256 "cea138ff6aea66f22ac603e84ccef0ba59206aeae677bcd2cc6044919de11e7e"
 
       def install
         bin.install "escuse-me"
