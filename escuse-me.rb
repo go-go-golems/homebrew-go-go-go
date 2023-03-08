@@ -5,20 +5,20 @@
 class EscuseMe < Formula
   desc "Escuse-me is a tool for querying elasticsearch"
   homepage "https://github.com/go-go-golems/escuse-me"
-  version "0.0.9"
+  version "0.0.10"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.9/biberon_0.0.9_Darwin_arm64.tar.gz"
-      sha256 "60a10b99127c8e25ae447c9fae78b38e672b641a754500bf1db8a944afce5a35"
+    if Hardware::CPU.intel?
+      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.10/biberon_0.0.10_Darwin_x86_64.tar.gz"
+      sha256 "a3c68f7865031d7ec62462c192337e6be6713cfabb8f5f18e37489956454cbbd"
 
       def install
         bin.install "escuse-me"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.9/biberon_0.0.9_Darwin_x86_64.tar.gz"
-      sha256 "3efd2b1621e8508d3a24186085a72ee26bf47b58d95dca2cfc8630c7691e297d"
+    if Hardware::CPU.arm?
+      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.10/biberon_0.0.10_Darwin_arm64.tar.gz"
+      sha256 "430c8ccdce2d456e249766261e02d0256112f7b3f96b13808c0465f63d07fc41"
 
       def install
         bin.install "escuse-me"
@@ -27,17 +27,17 @@ class EscuseMe < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.9/biberon_0.0.9_Linux_x86_64.tar.gz"
-      sha256 "79bbbbb5f9967798e9c742ecf64245f4a7660d5429f19a02bb4faaf14de41adf"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.10/biberon_0.0.10_Linux_arm64.tar.gz"
+      sha256 "a8823254e28e9de50f30227fc18c2b8fb28621aeeac9842b50d14cc117fb13a6"
 
       def install
         bin.install "escuse-me"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.9/biberon_0.0.9_Linux_arm64.tar.gz"
-      sha256 "92100864bd7e79a01e1e94245a466300a6636111d659dff90b4dcbfefd5f61eb"
+    if Hardware::CPU.intel?
+      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.10/biberon_0.0.10_Linux_x86_64.tar.gz"
+      sha256 "a738a51882993b62cf6eee6baab2c34dafaf8982f631ffb586aa02974c02524b"
 
       def install
         bin.install "escuse-me"
