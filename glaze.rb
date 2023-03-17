@@ -5,20 +5,20 @@
 class Glaze < Formula
   desc "Glaze is a tool for converting structured data"
   homepage "https://github.com/go-go-golems/glazed"
-  version "0.2.44"
+  version "0.2.45"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/glazed/releases/download/v0.2.44/glaze_0.2.44_darwin_amd64.tar.gz"
-      sha256 "335e0a3fbcc50a9f046b8b5636252297f171d881d1753c78e45d834dcc05b43d"
+      url "https://github.com/go-go-golems/glazed/releases/download/v0.2.45/glaze_0.2.45_darwin_amd64.tar.gz"
+      sha256 "2463440e8f8e4bd0e0ed670063a953fae5581dc740f2845c41fe281092a6aa8f"
 
       def install
         bin.install "glaze"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/glazed/releases/download/v0.2.44/glaze_0.2.44_darwin_arm64.tar.gz"
-      sha256 "d4d541355864d1b13e512dbdd3fa33244a140de9937ef85b638676654e9a50b9"
+      url "https://github.com/go-go-golems/glazed/releases/download/v0.2.45/glaze_0.2.45_darwin_arm64.tar.gz"
+      sha256 "9a3dd7ecd65f64a109a04fbaeb804352f58af8aa39787162c9126528218c7c83"
 
       def install
         bin.install "glaze"
@@ -28,16 +28,16 @@ class Glaze < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/glazed/releases/download/v0.2.44/glaze_0.2.44_linux_arm64.tar.gz"
-      sha256 "043b83e8f8cda258dbe73d437ed818f777d86bad7b9c3b2ce8f012ea1bf28894"
+      url "https://github.com/go-go-golems/glazed/releases/download/v0.2.45/glaze_0.2.45_linux_arm64.tar.gz"
+      sha256 "751a7deb3f94e51c6987bbb6b4e372947d04962e130712a26068430b940a8503"
 
       def install
         bin.install "glaze"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/glazed/releases/download/v0.2.44/glaze_0.2.44_linux_amd64.tar.gz"
-      sha256 "37928aa2e5c44232b06e6f09bc5dce21d27c0402c1aa46c3db453b087ba652e1"
+      url "https://github.com/go-go-golems/glazed/releases/download/v0.2.45/glaze_0.2.45_linux_amd64.tar.gz"
+      sha256 "3f9da7eb3ef020d72cc498855bc2a833ef5401de9e2dfc3e8420992751e672c6"
 
       def install
         bin.install "glaze"
