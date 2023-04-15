@@ -5,20 +5,20 @@
 class EscuseMe < Formula
   desc "Escuse-me is a tool for querying elasticsearch"
   homepage "https://github.com/go-go-golems/escuse-me"
-  version "0.0.21"
+  version "0.0.22"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.21/escuse-me_0.0.21_darwin_amd64.tar.gz"
-      sha256 "7089fcbec47ef2b249cfcffc5ee6a38a287c9d1323179fb84009ff4d8938f367"
+      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.22/escuse-me_0.0.22_darwin_amd64.tar.gz"
+      sha256 "5d496761690c6db4998a5f1656299d7d2f0f562a8ab1f067fc23f4fffa9653b7"
 
       def install
         bin.install "escuse-me"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.21/escuse-me_0.0.21_darwin_arm64.tar.gz"
-      sha256 "e01e4f9669bc8b49c5e06c4a76c91c4345151f32e364b48538302f4ba749259f"
+      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.22/escuse-me_0.0.22_darwin_arm64.tar.gz"
+      sha256 "9854806f16a8d14f26a41fbcfde215537b7dcd4547fe846a8e16e535e3aae398"
 
       def install
         bin.install "escuse-me"
@@ -28,16 +28,16 @@ class EscuseMe < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.21/escuse-me_0.0.21_linux_arm64.tar.gz"
-      sha256 "2b2e64e14dc8dc47e00e71a0f15c2284c8b1b70446580aea56a695e748439492"
+      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.22/escuse-me_0.0.22_linux_arm64.tar.gz"
+      sha256 "ff32ace12bb306c489448b8142bf1d61a95d77deb611456a1a122c145255b1e7"
 
       def install
         bin.install "escuse-me"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.21/escuse-me_0.0.21_linux_amd64.tar.gz"
-      sha256 "1bd101620b76ddc557cf69d297644c06fe91d245e2e0629d7df0d188f0de6d84"
+      url "https://github.com/go-go-golems/escuse-me/releases/download/v0.0.22/escuse-me_0.0.22_linux_amd64.tar.gz"
+      sha256 "40dfab9ce8985a903b4a36b7b4777cdb4c4ce26aba3c2c4d21c914074c24eeb2"
 
       def install
         bin.install "escuse-me"
