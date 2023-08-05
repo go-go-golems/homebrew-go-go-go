@@ -5,20 +5,20 @@
 class GoGoLabs < Formula
   desc "go-go-labs contains experimental go go tools"
   homepage "https://github.com/go-go-golems/go-go-labs"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/go-go-labs/releases/download/v0.0.1/go-go-labs_0.0.1_darwin_arm64.tar.gz"
-      sha256 "5f88d8e3613c91c8f74cb850ace83f388cf44fd40ad97ea02b7dddd122f00d3d"
+    if Hardware::CPU.intel?
+      url "https://github.com/go-go-golems/go-go-labs/releases/download/v0.0.2/go-go-labs_0.0.2_darwin_amd64.tar.gz"
+      sha256 "704ea2aced9f598b60bcab655ca614eec086de0c8eeb014d851763a8e045f4be"
 
       def install
         bin.install "mastoid"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/go-go-labs/releases/download/v0.0.1/go-go-labs_0.0.1_darwin_amd64.tar.gz"
-      sha256 "043f41c6534a9c41acc2b16bf12da6c0c47984ff7f7b00ed8da7761d41d990fd"
+    if Hardware::CPU.arm?
+      url "https://github.com/go-go-golems/go-go-labs/releases/download/v0.0.2/go-go-labs_0.0.2_darwin_arm64.tar.gz"
+      sha256 "956abcfc4f8f2a60d4b76a368d4d74cc6f7760f216f355f75dc67aae07c90439"
 
       def install
         bin.install "mastoid"
@@ -27,17 +27,17 @@ class GoGoLabs < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/go-go-labs/releases/download/v0.0.1/go-go-labs_0.0.1_linux_amd64.tar.gz"
-      sha256 "76c093b750b79467ee1c47274a0ec026847e47a70a61a394bc5ece97300e889e"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/go-go-golems/go-go-labs/releases/download/v0.0.2/go-go-labs_0.0.2_linux_arm64.tar.gz"
+      sha256 "9f561b51357f792d3891e3fe7370db8e7a986854a0870717723cbfbe69860f33"
 
       def install
         bin.install "mastoid"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-go-labs/releases/download/v0.0.1/go-go-labs_0.0.1_linux_arm64.tar.gz"
-      sha256 "a48cdf764d03d2499bdd1d373c29256d062aed268750ae878b3b784d6c4301e3"
+    if Hardware::CPU.intel?
+      url "https://github.com/go-go-golems/go-go-labs/releases/download/v0.0.2/go-go-labs_0.0.2_linux_amd64.tar.gz"
+      sha256 "45f8718646f392b179e4922e0539fb0c9ba56f7b97a807c0ebc4d62382894e0b"
 
       def install
         bin.install "mastoid"
