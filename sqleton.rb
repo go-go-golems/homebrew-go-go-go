@@ -5,20 +5,20 @@
 class Sqleton < Formula
   desc "Sqleton is a tool for querying databases"
   homepage "https://github.com/go-go-golems/sqleton"
-  version "0.1.64"
+  version "0.1.65"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/sqleton/releases/download/v0.1.64/sqleton_0.1.64_darwin_amd64.tar.gz"
-      sha256 "a133b782b88ec0a09c642a4bc58d177353e3bfb87f1681cea9db3cd371936a83"
+      url "https://github.com/go-go-golems/sqleton/releases/download/v0.1.65/sqleton_0.1.65_darwin_amd64.tar.gz"
+      sha256 "3ed519fd7e570fa4fbf0a97a14685672bb47583246a107f0264434e026132cb9"
 
       def install
         bin.install "sqleton"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/sqleton/releases/download/v0.1.64/sqleton_0.1.64_darwin_arm64.tar.gz"
-      sha256 "e93b062b1487c225c0f2c6b61654cbabcf129c17505f5fccef550f31ab6aec37"
+      url "https://github.com/go-go-golems/sqleton/releases/download/v0.1.65/sqleton_0.1.65_darwin_arm64.tar.gz"
+      sha256 "b47f8c3d0e17b13d90eb0a8d8672424b2e7cfb8a6826da1d774efe5a2249c6aa"
 
       def install
         bin.install "sqleton"
@@ -28,16 +28,16 @@ class Sqleton < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/sqleton/releases/download/v0.1.64/sqleton_0.1.64_linux_arm64.tar.gz"
-      sha256 "eca1535ce8f6eccd6d4961c424257e447323293f745ebcc29c62df201660c752"
+      url "https://github.com/go-go-golems/sqleton/releases/download/v0.1.65/sqleton_0.1.65_linux_arm64.tar.gz"
+      sha256 "d4d7e1f8d02bbf459cb1fd8484773d1f852620f35fab9a8a6fab33b7f0382e73"
 
       def install
         bin.install "sqleton"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/sqleton/releases/download/v0.1.64/sqleton_0.1.64_linux_amd64.tar.gz"
-      sha256 "aa76406ef237b17e15a8570dc742c9e499edef46ff10e3926b5661e27b13b219"
+      url "https://github.com/go-go-golems/sqleton/releases/download/v0.1.65/sqleton_0.1.65_linux_amd64.tar.gz"
+      sha256 "f1995f52f9915b51690459718f9b8dae039ce565ac5bf5ce52c9d2988a4c4640"
 
       def install
         bin.install "sqleton"
