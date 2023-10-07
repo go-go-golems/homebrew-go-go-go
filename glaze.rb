@@ -5,20 +5,20 @@
 class Glaze < Formula
   desc "Glaze is a tool for converting structured data"
   homepage "https://github.com/go-go-golems/glazed"
-  version "0.4.13"
+  version "0.4.16"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/glazed/releases/download/v0.4.13/glaze_0.4.13_darwin_arm64.tar.gz"
-      sha256 "1c302ad4ad6711431aa24ba6d38bf1b6ee7cfc2cba45f5d6b79c896aee4984cd"
+    if Hardware::CPU.intel?
+      url "https://github.com/go-go-golems/glazed/releases/download/v0.4.16/glaze_0.4.16_darwin_amd64.tar.gz"
+      sha256 "194817031df89724fa0e1e4088a6376592edf6d7513d4be5124acdeb55248646"
 
       def install
         bin.install "glaze"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/glazed/releases/download/v0.4.13/glaze_0.4.13_darwin_amd64.tar.gz"
-      sha256 "36c7fb27115148c73807ac3b2ac7309a507b284acb257b673e0f669165a919aa"
+    if Hardware::CPU.arm?
+      url "https://github.com/go-go-golems/glazed/releases/download/v0.4.16/glaze_0.4.16_darwin_arm64.tar.gz"
+      sha256 "a5fc49ac021e7f59c39f478d6f2b46094738a899ac2c937dd328014e80772965"
 
       def install
         bin.install "glaze"
@@ -27,17 +27,17 @@ class Glaze < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/glazed/releases/download/v0.4.13/glaze_0.4.13_linux_amd64.tar.gz"
-      sha256 "1209729589e994da91ad4ffbe6653a7c2763026cef28a0565f0100213e13207b"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/go-go-golems/glazed/releases/download/v0.4.16/glaze_0.4.16_linux_arm64.tar.gz"
+      sha256 "cdcc6677326cf0b19dd19a00bf36e4bf98de0a3ec93c80d3d21dfaa844d240ac"
 
       def install
         bin.install "glaze"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/glazed/releases/download/v0.4.13/glaze_0.4.13_linux_arm64.tar.gz"
-      sha256 "4ae4d6dc50cdde719f79bd79a54df05f9178d620347b489257f5245541d82d1d"
+    if Hardware::CPU.intel?
+      url "https://github.com/go-go-golems/glazed/releases/download/v0.4.16/glaze_0.4.16_linux_amd64.tar.gz"
+      sha256 "482cd1c1ff4a646cf8ab8ab243c2f1ced32b5be71adb974aaeaaca7b186d4889"
 
       def install
         bin.install "glaze"
