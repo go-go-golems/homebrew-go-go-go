@@ -5,20 +5,20 @@
 class Pinocchio < Formula
   desc "Pinocchio is a tool to interact with large language models"
   homepage "https://github.com/go-go-golems/pinocchio"
-  version "0.2.19"
+  version "0.2.20"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/geppetto/releases/download/v0.2.19/pinocchio_0.2.19_darwin_amd64.tar.gz"
-      sha256 "eee4247c411b0caed0d34650c49f39d88826c69a52ec7b9ec44132da45fd9d9e"
+      url "https://github.com/go-go-golems/geppetto/releases/download/v0.2.20/pinocchio_0.2.20_darwin_amd64.tar.gz"
+      sha256 "1df75d0751d8659e770b99d040767b164d35bf6e1eb2dd7fc8918f47ece9ad37"
 
       def install
         bin.install "pinocchio"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/geppetto/releases/download/v0.2.19/pinocchio_0.2.19_darwin_arm64.tar.gz"
-      sha256 "ce7cdece05e7dc66517786b5c0c8aaf68d296db7a23961506573c0c25557c344"
+      url "https://github.com/go-go-golems/geppetto/releases/download/v0.2.20/pinocchio_0.2.20_darwin_arm64.tar.gz"
+      sha256 "62b2d7cc03a2e726248c3081390b5baf053747042f55a070f3f6fa9358acfd1c"
 
       def install
         bin.install "pinocchio"
@@ -28,16 +28,16 @@ class Pinocchio < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/geppetto/releases/download/v0.2.19/pinocchio_0.2.19_linux_arm64.tar.gz"
-      sha256 "9504316bfa47f3d93c7168667386c675997e92c0e9fb9af0264e92859f51c8ad"
+      url "https://github.com/go-go-golems/geppetto/releases/download/v0.2.20/pinocchio_0.2.20_linux_arm64.tar.gz"
+      sha256 "00edb4f1d790a1378242ff24c0ec099678c5a162faf1aca2a332e981de50c319"
 
       def install
         bin.install "pinocchio"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/geppetto/releases/download/v0.2.19/pinocchio_0.2.19_linux_amd64.tar.gz"
-      sha256 "f8c99d75b110ef86a881f4f1f88e36206ca4b6cabe608a580ee622bbb3889169"
+      url "https://github.com/go-go-golems/geppetto/releases/download/v0.2.20/pinocchio_0.2.20_linux_amd64.tar.gz"
+      sha256 "fb09ba2d6da49d7a298f9c3c7ddd9638a61c15990666706cacd895e34371a0f4"
 
       def install
         bin.install "pinocchio"
