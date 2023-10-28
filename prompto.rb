@@ -5,20 +5,20 @@
 class Prompto < Formula
   desc "prompto is a tool"
   homepage "https://github.com/go-go-golems/XXX"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/prompto/releases/download/v0.0.3/prompto_0.0.3_darwin_arm64.tar.gz"
-      sha256 "8c4e9d32f2573de753cca8f93b24cfa9e14fdbfd86198af23768d23649541e13"
+    if Hardware::CPU.intel?
+      url "https://github.com/go-go-golems/prompto/releases/download/v0.0.4/prompto_0.0.4_darwin_amd64.tar.gz"
+      sha256 "48fc1bbbc14ec3f49f414fbf30d494493e0ee6e53311c478db9510f91f315d62"
 
       def install
         bin.install "prompto"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/prompto/releases/download/v0.0.3/prompto_0.0.3_darwin_amd64.tar.gz"
-      sha256 "cac205b3655ef3bc705cdcc3bdc544c4edda228d2eac1d7a1c93066d8bc35f49"
+    if Hardware::CPU.arm?
+      url "https://github.com/go-go-golems/prompto/releases/download/v0.0.4/prompto_0.0.4_darwin_arm64.tar.gz"
+      sha256 "021b39ec9770b41c89ad0e1cd77b38a127829c8fa957f6d4e237921702c5dd15"
 
       def install
         bin.install "prompto"
@@ -27,17 +27,17 @@ class Prompto < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/prompto/releases/download/v0.0.3/prompto_0.0.3_linux_amd64.tar.gz"
-      sha256 "d96e77e1f249fe9a275534101802558c1285681622970a586c932b6bb5de95ef"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/go-go-golems/prompto/releases/download/v0.0.4/prompto_0.0.4_linux_arm64.tar.gz"
+      sha256 "932bf7b96983b94bb9e665c503bd460dd509af3645804d84d8233eedd016650e"
 
       def install
         bin.install "prompto"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/prompto/releases/download/v0.0.3/prompto_0.0.3_linux_arm64.tar.gz"
-      sha256 "df1965edfe1ba71d8d86e00e7bfc5b95553fb3f5eedb83d09b681ee64422bc7a"
+    if Hardware::CPU.intel?
+      url "https://github.com/go-go-golems/prompto/releases/download/v0.0.4/prompto_0.0.4_linux_amd64.tar.gz"
+      sha256 "dc099e06947b8df967246fdbe3050421e7a2b9d62d09946c6e8220376fd8b548"
 
       def install
         bin.install "prompto"
