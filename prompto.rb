@@ -5,20 +5,20 @@
 class Prompto < Formula
   desc "prompto is a tool"
   homepage "https://github.com/go-go-golems/XXX"
-  version "0.0.4"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/prompto/releases/download/v0.0.4/prompto_0.0.4_darwin_amd64.tar.gz"
-      sha256 "48fc1bbbc14ec3f49f414fbf30d494493e0ee6e53311c478db9510f91f315d62"
+      url "https://github.com/go-go-golems/prompto/releases/download/v0.1.0/prompto_0.1.0_darwin_amd64.tar.gz"
+      sha256 "eba631f44feb34e93d2106e1ffba51c5b694c0143758674bcaacfe42c0c162ed"
 
       def install
         bin.install "prompto"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/prompto/releases/download/v0.0.4/prompto_0.0.4_darwin_arm64.tar.gz"
-      sha256 "021b39ec9770b41c89ad0e1cd77b38a127829c8fa957f6d4e237921702c5dd15"
+      url "https://github.com/go-go-golems/prompto/releases/download/v0.1.0/prompto_0.1.0_darwin_arm64.tar.gz"
+      sha256 "a3af2093d9af3c5f6c4bfa18277ce8860c2f67f6946582434e1f1b22f879ea13"
 
       def install
         bin.install "prompto"
@@ -28,16 +28,16 @@ class Prompto < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/prompto/releases/download/v0.0.4/prompto_0.0.4_linux_arm64.tar.gz"
-      sha256 "932bf7b96983b94bb9e665c503bd460dd509af3645804d84d8233eedd016650e"
+      url "https://github.com/go-go-golems/prompto/releases/download/v0.1.0/prompto_0.1.0_linux_arm64.tar.gz"
+      sha256 "8ebeba721ab2dce0d6e08c83eed5976b2d3e847b7d7fa9832b0854e1abe72d13"
 
       def install
         bin.install "prompto"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/prompto/releases/download/v0.0.4/prompto_0.0.4_linux_amd64.tar.gz"
-      sha256 "dc099e06947b8df967246fdbe3050421e7a2b9d62d09946c6e8220376fd8b548"
+      url "https://github.com/go-go-golems/prompto/releases/download/v0.1.0/prompto_0.1.0_linux_amd64.tar.gz"
+      sha256 "6dc690ab51a621bb68007132f7d39cdebf25821cfffe6543a91c895541d5d38b"
 
       def install
         bin.install "prompto"
