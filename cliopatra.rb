@@ -5,20 +5,20 @@
 class Cliopatra < Formula
   desc "cliopatra is a tool"
   homepage "https://github.com/go-go-golems/cliopatra"
-  version "0.0.2"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/cliopatra/releases/download/v0.0.2/cliopatra_0.0.2_darwin_amd64.tar.gz"
-      sha256 "f17154873f5b9a2b2a53a74414159c3fcb172d9379c89a0e6276da845b803920"
+      url "https://github.com/go-go-golems/cliopatra/releases/download/v0.1.0/cliopatra_0.1.0_darwin_amd64.tar.gz"
+      sha256 "609f65d3a31701d124cec613748ab8a82cadadae6f9bd717b185d52077a92f93"
 
       def install
         bin.install "cliopatra"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/cliopatra/releases/download/v0.0.2/cliopatra_0.0.2_darwin_arm64.tar.gz"
-      sha256 "4c9d487d2279f395142db9898e31647d24f1ffae0aaf8fc08241647f6b15dec9"
+      url "https://github.com/go-go-golems/cliopatra/releases/download/v0.1.0/cliopatra_0.1.0_darwin_arm64.tar.gz"
+      sha256 "4c09aeb2db8a5e851a9c3dab48f2911326da8ef9d2972436af950757c1531e1d"
 
       def install
         bin.install "cliopatra"
@@ -28,16 +28,16 @@ class Cliopatra < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/cliopatra/releases/download/v0.0.2/cliopatra_0.0.2_linux_arm64.tar.gz"
-      sha256 "9eb9ef9e06348ef7291034787c4fc0accb8347e1b6547b10c54d669bce3c27ba"
+      url "https://github.com/go-go-golems/cliopatra/releases/download/v0.1.0/cliopatra_0.1.0_linux_arm64.tar.gz"
+      sha256 "5c8cc509a54da2483de91f23cf1f448a0376816fbd94d5a61cfc189ba2caf0a9"
 
       def install
         bin.install "cliopatra"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/cliopatra/releases/download/v0.0.2/cliopatra_0.0.2_linux_amd64.tar.gz"
-      sha256 "8dbaa66935550b19aa6c146b013ad40d4c36db713214ca20201a07f78f526950"
+      url "https://github.com/go-go-golems/cliopatra/releases/download/v0.1.0/cliopatra_0.1.0_linux_amd64.tar.gz"
+      sha256 "ffabacb7507d91c8d09dfc898938133bb1db090d36381b4434eb068e55a4ec35"
 
       def install
         bin.install "cliopatra"
