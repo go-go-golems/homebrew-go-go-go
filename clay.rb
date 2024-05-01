@@ -5,20 +5,20 @@
 class Clay < Formula
   desc "CLAY IS A TOOL TO WORK WITH GO GO COMMAND REPOSITORIES"
   homepage "https://github.com/go-go-golems/clay"
-  version "0.1.10"
+  version "0.1.11"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/clay/releases/download/v0.1.10/clay_0.1.10_darwin_amd64.tar.gz"
-      sha256 "94c58a12b534e402296d0f5e3da15e549d8757646d657104055db5044b612e8c"
+      url "https://github.com/go-go-golems/clay/releases/download/v0.1.11/clay_0.1.11_darwin_amd64.tar.gz"
+      sha256 "a2bb1bb1b7f3cc5c4747c248147816e40c1bbfd3070f11846e23fabc8877d0c8"
 
       def install
         bin.install "clay"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/clay/releases/download/v0.1.10/clay_0.1.10_darwin_arm64.tar.gz"
-      sha256 "f1dceedcabdeb6697cbc591aa0b2bf06bbd90f17d3fc24a1e2a0bc90cdf6d184"
+      url "https://github.com/go-go-golems/clay/releases/download/v0.1.11/clay_0.1.11_darwin_arm64.tar.gz"
+      sha256 "064ba009fbe3efc4c17d8e47a538992f032e9ed67383da474ad1023484371dc6"
 
       def install
         bin.install "clay"
@@ -28,16 +28,16 @@ class Clay < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/clay/releases/download/v0.1.10/clay_0.1.10_linux_amd64.tar.gz"
-      sha256 "dc8af107bed01296fa43dd17949a0a5c3cae1eea30848c4ebb27963f78df58c5"
+      url "https://github.com/go-go-golems/clay/releases/download/v0.1.11/clay_0.1.11_linux_amd64.tar.gz"
+      sha256 "f7e664c31b187d2910b9bce22e425cba55b85fa9ec599ed5136a3f4b8c0611b1"
 
       def install
         bin.install "clay"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/clay/releases/download/v0.1.10/clay_0.1.10_linux_arm64.tar.gz"
-      sha256 "8da7e8045763a2300f027e4e3118933e1e89b99b6a9f92c97a021112edddc8f4"
+      url "https://github.com/go-go-golems/clay/releases/download/v0.1.11/clay_0.1.11_linux_arm64.tar.gz"
+      sha256 "b4a8d2b75b38596153a71442fdc6bad7023097c9753080822c761e4d933f0672"
 
       def install
         bin.install "clay"
