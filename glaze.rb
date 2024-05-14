@@ -5,20 +5,20 @@
 class Glaze < Formula
   desc "Glaze is a tool for converting structured data"
   homepage "https://github.com/go-go-golems/glazed"
-  version "0.5.13"
+  version "0.5.14"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/glazed/releases/download/v0.5.13/glaze_0.5.13_darwin_amd64.tar.gz"
-      sha256 "905b4bb36c60f58a14ad0176292d1bd0bef60d9536b542996b3b17a9331bcc83"
+    on_intel do
+      url "https://github.com/go-go-golems/glazed/releases/download/v0.5.14/glaze_0.5.14_darwin_amd64.tar.gz"
+      sha256 "8365eaae9e80043669d80b1b8c68e78a4ca3bd746febae2acb050984424ce2f3"
 
       def install
         bin.install "glaze"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/glazed/releases/download/v0.5.13/glaze_0.5.13_darwin_arm64.tar.gz"
-      sha256 "fabd254c598f7aa2d8c1b938198a574ced1c2e7074b0d4f85b0938bebc415572"
+    on_arm do
+      url "https://github.com/go-go-golems/glazed/releases/download/v0.5.14/glaze_0.5.14_darwin_arm64.tar.gz"
+      sha256 "3ad495e226b899ad6f06f47292857741ea2634486d2f5975b2e0d54800dca8a2"
 
       def install
         bin.install "glaze"
@@ -27,20 +27,24 @@ class Glaze < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/glazed/releases/download/v0.5.13/glaze_0.5.13_linux_amd64.tar.gz"
-      sha256 "6fe6229fd615acc32ebdfabdebe4eceeaf6df508807590d087ebdba02f6d7b49"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/go-go-golems/glazed/releases/download/v0.5.14/glaze_0.5.14_linux_amd64.tar.gz"
+        sha256 "a0513596ba5901f921e8db9d524a604c1bd1b0401092be3faaf32332a8e35294"
 
-      def install
-        bin.install "glaze"
+        def install
+          bin.install "glaze"
+        end
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/glazed/releases/download/v0.5.13/glaze_0.5.13_linux_arm64.tar.gz"
-      sha256 "2dbad0063d0cb2a75c2b03dcaabeba4cce20e0528779eaf8db663bc551ce4fce"
+    on_arm do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/go-go-golems/glazed/releases/download/v0.5.14/glaze_0.5.14_linux_arm64.tar.gz"
+        sha256 "2c35f82abb52b2749bbf025461f2265103e8514670361bdee542741491d583b0"
 
-      def install
-        bin.install "glaze"
+        def install
+          bin.install "glaze"
+        end
       end
     end
   end
