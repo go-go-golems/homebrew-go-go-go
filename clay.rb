@@ -5,20 +5,20 @@
 class Clay < Formula
   desc "CLAY IS A TOOL TO WORK WITH GO GO COMMAND REPOSITORIES"
   homepage "https://github.com/go-go-golems/clay"
-  version "0.1.15"
+  version "0.1.16"
 
   on_macos do
     on_intel do
-      url "https://github.com/go-go-golems/clay/releases/download/v0.1.15/clay_0.1.15_darwin_amd64.tar.gz"
-      sha256 "00ca80e95e90c86705ab8e58b239e2469ed48728a12ae57c9ed94e4083d5eafb"
+      url "https://github.com/go-go-golems/clay/releases/download/v0.1.16/clay_0.1.16_darwin_amd64.tar.gz"
+      sha256 "b70fe282fe0c8bf353acaed09bb57d6a9685d9b0909089e6d31a5757c0bd7e5d"
 
       def install
         bin.install "clay"
       end
     end
     on_arm do
-      url "https://github.com/go-go-golems/clay/releases/download/v0.1.15/clay_0.1.15_darwin_arm64.tar.gz"
-      sha256 "57d50911689e4b82ae552e91943d2c568774afb786f58d20668ece8807492e67"
+      url "https://github.com/go-go-golems/clay/releases/download/v0.1.16/clay_0.1.16_darwin_arm64.tar.gz"
+      sha256 "23d90e4d58b0d9159b0a00b582e1730f185d312a743a8c290ed3ea3861d40009"
 
       def install
         bin.install "clay"
@@ -29,8 +29,8 @@ class Clay < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/go-go-golems/clay/releases/download/v0.1.15/clay_0.1.15_linux_amd64.tar.gz"
-        sha256 "2512690bf62703c2142771069c33eabbf6e767458e3eb041e1e8b5f0dbb778dd"
+        url "https://github.com/go-go-golems/clay/releases/download/v0.1.16/clay_0.1.16_linux_amd64.tar.gz"
+        sha256 "804f7de68c9f0840c34d01cacd4690e734e526bffd31e2d5bc98211d216755b7"
 
         def install
           bin.install "clay"
@@ -39,8 +39,8 @@ class Clay < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/go-go-golems/clay/releases/download/v0.1.15/clay_0.1.15_linux_arm64.tar.gz"
-        sha256 "852f2d121f4fd2bc03a79c97c46a45af8b1c1bed69f0b9528c9ffb947a636344"
+        url "https://github.com/go-go-golems/clay/releases/download/v0.1.16/clay_0.1.16_linux_arm64.tar.gz"
+        sha256 "5a3fff2249c836c513bb2dda665724a3ddfc50a6ca2aee1a85596a83fe401856"
 
         def install
           bin.install "clay"
