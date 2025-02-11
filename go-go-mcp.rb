@@ -5,20 +5,20 @@
 class GoGoMcp < Formula
   desc "go-go-mcp is a tool to serve and run MCPs"
   homepage "https://github.com/go-go-golems/go-go-mcp"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.4/go-go-mcp_0.0.4_darwin_amd64.tar.gz"
-      sha256 "cf5fe49409b66a13fa50c8a70c55b5a7de48820017160ca28c0a31f36611f624"
+      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.5/go-go-mcp_0.0.5_darwin_amd64.tar.gz"
+      sha256 "611cdd7b534e85b5ce7e7b06178a773e088304d7900c4c61a6e635449a1287b1"
 
       def install
         bin.install "go-go-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.4/go-go-mcp_0.0.4_darwin_arm64.tar.gz"
-      sha256 "407815cf5641b9846f44744c56724eb60553ab3bf8f9eee641b073867966688f"
+      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.5/go-go-mcp_0.0.5_darwin_arm64.tar.gz"
+      sha256 "dcc319454edb30f917ab73a671f3a0b9d5b3aaeec2bfd8d2ce19bced1a80daff"
 
       def install
         bin.install "go-go-mcp"
@@ -29,8 +29,8 @@ class GoGoMcp < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.4/go-go-mcp_0.0.4_linux_amd64.tar.gz"
-        sha256 "25a78e93793700c709bfe30ece8d8714d23bc39c8e05a7f5249548d511137ddc"
+        url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.5/go-go-mcp_0.0.5_linux_amd64.tar.gz"
+        sha256 "35ff6be4c7f6fefaf4c40cbab4876234246bc6caf8329a056c5a1bc0d044701f"
 
         def install
           bin.install "go-go-mcp"
@@ -39,8 +39,8 @@ class GoGoMcp < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.4/go-go-mcp_0.0.4_linux_arm64.tar.gz"
-        sha256 "20dcfa4ec467c6c38fa6e272abe4f4b344e25df6153c8b18199e09ec1abc3bea"
+        url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.5/go-go-mcp_0.0.5_linux_arm64.tar.gz"
+        sha256 "12230e826d30c758d3baf5241ed0f213e998e0c56277b38acb2c4d64a8baee93"
 
         def install
           bin.install "go-go-mcp"
