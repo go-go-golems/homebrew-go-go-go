@@ -5,20 +5,20 @@
 class Emrichen < Formula
   desc "emrichen is a go implementation of the template engine for YAML"
   homepage "https://github.com/go-go-golems/go-emrichen"
-  version "0.0.6"
+  version "0.0.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/go-emrichen/releases/download/v0.0.6/emrichen_0.0.6_darwin_amd64.tar.gz"
-      sha256 "708947ab521e19d006ff98f6f5982c98e2c7a15b6e4005b2808cdd8903c0c996"
+      url "https://github.com/go-go-golems/go-emrichen/releases/download/v0.0.7/emrichen_0.0.7_darwin_amd64.tar.gz"
+      sha256 "ec449a030be51d77d97407bb6c6f6cf2c29d9612f03a6784ccc62ea13c78995e"
 
       def install
         bin.install "emrichen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/go-emrichen/releases/download/v0.0.6/emrichen_0.0.6_darwin_arm64.tar.gz"
-      sha256 "1bf890e71331c4c6cfbc56e99f0c273a59155c2330668b597f438ce5c6e26f6d"
+      url "https://github.com/go-go-golems/go-emrichen/releases/download/v0.0.7/emrichen_0.0.7_darwin_arm64.tar.gz"
+      sha256 "09056f44fcf2d157c48afac552f3f227e2793f3f0b4f7159a343c496e49c7a40"
 
       def install
         bin.install "emrichen"
@@ -29,8 +29,8 @@ class Emrichen < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/go-go-golems/go-emrichen/releases/download/v0.0.6/emrichen_0.0.6_linux_amd64.tar.gz"
-        sha256 "e4887fc5f271c8825d561638b3940a5b1022e3a45fb3ea322adb6921c1cfa488"
+        url "https://github.com/go-go-golems/go-emrichen/releases/download/v0.0.7/emrichen_0.0.7_linux_amd64.tar.gz"
+        sha256 "b2fc0200eed486e2e9f88806980b229529a3af325a4365b4facca19a3d87cb7c"
 
         def install
           bin.install "emrichen"
@@ -39,8 +39,8 @@ class Emrichen < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/go-go-golems/go-emrichen/releases/download/v0.0.6/emrichen_0.0.6_linux_arm64.tar.gz"
-        sha256 "152d963afcbeaacab58357403a848146aaa0b4a39ca6cf89895dcc5dcc5f1dc0"
+        url "https://github.com/go-go-golems/go-emrichen/releases/download/v0.0.7/emrichen_0.0.7_linux_arm64.tar.gz"
+        sha256 "6064504b0aa5ddd6ed1113433c07eab11d984b8e0cdd789b5b278b7e8555b5bb"
 
         def install
           bin.install "emrichen"
