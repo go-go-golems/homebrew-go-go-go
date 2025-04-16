@@ -5,20 +5,20 @@
 class Pinocchio < Formula
   desc "Pinocchio is a tool to interact with large language models"
   homepage "https://github.com/go-go-golems/pinocchio"
-  version "0.4.31"
+  version "0.4.32"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/pinocchio/releases/download/v0.4.31/pinocchio_0.4.31_darwin_amd64.tar.gz"
-      sha256 "93dcd8b8ec50159337e71ea729d588f6ae5dc0efa1176d4f7d7867af6eb73336"
+      url "https://github.com/go-go-golems/pinocchio/releases/download/v0.4.32/pinocchio_0.4.32_darwin_amd64.tar.gz"
+      sha256 "cac8554dd9799929e515ee1e0426a674eab6b642c57837a4cb2fae6ec0a50596"
 
       def install
         bin.install "pinocchio"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/pinocchio/releases/download/v0.4.31/pinocchio_0.4.31_darwin_arm64.tar.gz"
-      sha256 "c5478f5138de2305422c3f81d2a31580882c264a3a45664b844ae9f070321b4b"
+      url "https://github.com/go-go-golems/pinocchio/releases/download/v0.4.32/pinocchio_0.4.32_darwin_arm64.tar.gz"
+      sha256 "af2f7a8b018100404dff94363a50650d9f5eb82e10a233f75f71d84221966939"
 
       def install
         bin.install "pinocchio"
@@ -29,8 +29,8 @@ class Pinocchio < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/go-go-golems/pinocchio/releases/download/v0.4.31/pinocchio_0.4.31_linux_amd64.tar.gz"
-        sha256 "37a4b3a6b68514bdc858987e176a1da0f2f7513e9cf660167c176c7d071bfebb"
+        url "https://github.com/go-go-golems/pinocchio/releases/download/v0.4.32/pinocchio_0.4.32_linux_amd64.tar.gz"
+        sha256 "9a59887f521d9e196741d9fccde86b6ae2f0ea53b399c21b3977d2aeb90355a8"
 
         def install
           bin.install "pinocchio"
@@ -39,8 +39,8 @@ class Pinocchio < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/go-go-golems/pinocchio/releases/download/v0.4.31/pinocchio_0.4.31_linux_arm64.tar.gz"
-        sha256 "eec0d1536152db7ae8e0beba38e0c8a0291411d7257f329c4bbd3201d2d501b2"
+        url "https://github.com/go-go-golems/pinocchio/releases/download/v0.4.32/pinocchio_0.4.32_linux_arm64.tar.gz"
+        sha256 "4169d91b13a19edae15528c4371027a8c65259e214e0e83e89243f4657083994"
 
         def install
           bin.install "pinocchio"
