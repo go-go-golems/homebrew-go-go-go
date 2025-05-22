@@ -5,20 +5,20 @@
 class Mcp < Formula
   desc "mcp is a tool to serve and run MCPs"
   homepage "https://github.com/go-go-golems/go-go-mcp"
-  version "0.0.8"
+  version "0.0.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.8/mcp_0.0.8_darwin_amd64.tar.gz"
-      sha256 "c050ce20e77e8617c95722877ee1f95eb334e411eea23290fb99cfd5d3d060ae"
+      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.9/mcp_0.0.9_darwin_amd64.tar.gz"
+      sha256 "afda5963ceba396da61ea1293f7fc98ec86569ad40bdb81408958c2fb3044d3b"
 
       def install
         bin.install "mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.8/mcp_0.0.8_darwin_arm64.tar.gz"
-      sha256 "9c42860a7046ebac6d84b32a593d201c83cb1795f3688561c8ad2721e5582688"
+      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.9/mcp_0.0.9_darwin_arm64.tar.gz"
+      sha256 "889bfe50ed2d8c25c8f9a240081c223ec539a633f29e6fa518d21a062f5ed317"
 
       def install
         bin.install "mcp"
@@ -27,24 +27,18 @@ class Mcp < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.8/mcp_0.0.8_linux_amd64.tar.gz"
-        sha256 "3491d86a19b8c129fc1fa7abe6beb0e4cc06aa23053bea7a440ee12585d6135f"
-
-        def install
-          bin.install "mcp"
-        end
+    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
+      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.9/mcp_0.0.9_linux_amd64.tar.gz"
+      sha256 "15431c39a0641904bfdf748ea507bbd4db2856fc4d75a2584df9a8692a959c91"
+      def install
+        bin.install "mcp"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.8/mcp_0.0.8_linux_arm64.tar.gz"
-        sha256 "f8c131ab33f4fff5f527c336c33d721cc094fbcdd0ede772d8733ef556061184"
-
-        def install
-          bin.install "mcp"
-        end
+    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
+      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.9/mcp_0.0.9_linux_arm64.tar.gz"
+      sha256 "c5970931404acf70ef506f11e823d1fcce8c984c2e791e28a4bf9bb45cc92569"
+      def install
+        bin.install "mcp"
       end
     end
   end
