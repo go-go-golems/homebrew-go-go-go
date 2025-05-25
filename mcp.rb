@@ -5,20 +5,20 @@
 class Mcp < Formula
   desc "mcp is a tool to serve and run MCPs"
   homepage "https://github.com/go-go-golems/go-go-mcp"
-  version "0.0.9"
+  version "0.0.10"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.9/mcp_0.0.9_darwin_amd64.tar.gz"
-      sha256 "afda5963ceba396da61ea1293f7fc98ec86569ad40bdb81408958c2fb3044d3b"
+      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.10/mcp_0.0.10_darwin_amd64.tar.gz"
+      sha256 "c7f10f77037beb80519d9cc7d8eb630f8b5fbc75cef9b494b54545688fa61d9f"
 
       def install
         bin.install "mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.9/mcp_0.0.9_darwin_arm64.tar.gz"
-      sha256 "889bfe50ed2d8c25c8f9a240081c223ec539a633f29e6fa518d21a062f5ed317"
+      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.10/mcp_0.0.10_darwin_arm64.tar.gz"
+      sha256 "bb5f2c7f516fb31f8d0cc1b24a82dc3291838591c8ead60f4d11ec56e558f41c"
 
       def install
         bin.install "mcp"
@@ -28,15 +28,15 @@ class Mcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.9/mcp_0.0.9_linux_amd64.tar.gz"
-      sha256 "15431c39a0641904bfdf748ea507bbd4db2856fc4d75a2584df9a8692a959c91"
+      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.10/mcp_0.0.10_linux_amd64.tar.gz"
+      sha256 "ebe517b0aeb88bf290246d76dc10e54d7bd3e3ec315736da4e53dff28a181ce1"
       def install
         bin.install "mcp"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.9/mcp_0.0.9_linux_arm64.tar.gz"
-      sha256 "c5970931404acf70ef506f11e823d1fcce8c984c2e791e28a4bf9bb45cc92569"
+      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.10/mcp_0.0.10_linux_arm64.tar.gz"
+      sha256 "febb0ed73e5259f59d68f2d7b77932e37275b5a629e08590524078a6aecdef18"
       def install
         bin.install "mcp"
       end
