@@ -5,20 +5,20 @@
 class Mcp < Formula
   desc "mcp is a tool to serve and run MCPs"
   homepage "https://github.com/go-go-golems/go-go-mcp"
-  version "0.0.11"
+  version "0.0.12"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.11/mcp_0.0.11_darwin_amd64.tar.gz"
-      sha256 "2b0b32681bf11e87daa0f8e4fabf9a042665755219db3293e943f1f898bd3c1c"
+      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.12/mcp_0.0.12_darwin_amd64.tar.gz"
+      sha256 "0fefa8c9aef1d6ba3975f239ce20044a94d75652cf07aa1137651a5b50c1311f"
 
       def install
         bin.install "mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.11/mcp_0.0.11_darwin_arm64.tar.gz"
-      sha256 "13d6b3febf93d62409f93d9584d4ae14fecb16e2c8ad7e804eb5a09372d9c5cb"
+      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.12/mcp_0.0.12_darwin_arm64.tar.gz"
+      sha256 "f12a74b3752e26bd3c3d514608f134af0aaa23a82c5bdbb59d8622161ed4b8e7"
 
       def install
         bin.install "mcp"
@@ -28,15 +28,15 @@ class Mcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.11/mcp_0.0.11_linux_amd64.tar.gz"
-      sha256 "2d90b1c09d19c56f77fadb5b7fded336a12dec109b598f44ac5e6b7e640fca88"
+      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.12/mcp_0.0.12_linux_amd64.tar.gz"
+      sha256 "e4b45e5f90d7cb083ae65a66bb81544f62de18b7f38ad461d17a42c7c254649d"
       def install
         bin.install "mcp"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.11/mcp_0.0.11_linux_arm64.tar.gz"
-      sha256 "a9e33e41a3e42de8330a04ef7a59337abff3dc79e73f55cf67990f689fc9b25a"
+      url "https://github.com/go-go-golems/go-go-mcp/releases/download/v0.0.12/mcp_0.0.12_linux_arm64.tar.gz"
+      sha256 "e0e0b186e715a4354c05a1b5412c379153d4721dc1bbf7b87c41310605ee0d89"
       def install
         bin.install "mcp"
       end
