@@ -5,46 +5,40 @@
 class Sqleton < Formula
   desc "Sqleton is a tool for querying databases"
   homepage "https://github.com/go-go-golems/sqleton"
-  version "0.2.31"
+  version "0.2.32"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/sqleton/releases/download/v0.2.31/sqleton_0.2.31_darwin_amd64"
-      sha256 "05ca2f9adae228f7c95d6db9dcd47fbab32fe0b87d1b7a3f116e34d97086a8f5"
+      url "https://github.com/go-go-golems/sqleton/releases/download/v0.2.32/sqleton_0.2.32_darwin_amd64"
+      sha256 "e19dacd994fe64a9eb2ee33f3e1c3d98f2467220690d080bc7a6978f5cb02a01"
 
       def install
-        bin.install "sqleton_0.2.31_darwin_amd64" => "sqleton"
+        bin.install "sqleton_0.2.32_darwin_amd64" => "sqleton"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/sqleton/releases/download/v0.2.31/sqleton_0.2.31_darwin_arm64"
-      sha256 "f840f457e4f3dfa0775d0b371b9ccc347359055e1bcdf1caa61748a58d33aef0"
+      url "https://github.com/go-go-golems/sqleton/releases/download/v0.2.32/sqleton_0.2.32_darwin_arm64"
+      sha256 "0d7ef46250634b8c6f37a3d0c5bee584853ba2792b0339d394120aa30ba46d23"
 
       def install
-        bin.install "sqleton_0.2.31_darwin_arm64" => "sqleton"
+        bin.install "sqleton_0.2.32_darwin_arm64" => "sqleton"
       end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/go-go-golems/sqleton/releases/download/v0.2.31/sqleton_0.2.31_linux_amd64"
-        sha256 "14ce084d9e1235d8dd199e101a13c58baf0b4976e1e94d9b4192071f26b2968a"
-
-        def install
-          bin.install "sqleton_0.2.31_linux_amd64" => "sqleton"
-        end
+    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
+      url "https://github.com/go-go-golems/sqleton/releases/download/v0.2.32/sqleton_0.2.32_linux_amd64"
+      sha256 "ec20289d7991d8a2fb9b1337f9668244482df13e0c444dffc24570d206f83f44"
+      def install
+        bin.install "sqleton_0.2.32_linux_amd64" => "sqleton"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/go-go-golems/sqleton/releases/download/v0.2.31/sqleton_0.2.31_linux_arm64"
-        sha256 "69fcdc1b3f470fc2b28fbf34b3e6534098710771b1c33f5746d1c1ca3936cf32"
-
-        def install
-          bin.install "sqleton_0.2.31_linux_arm64" => "sqleton"
-        end
+    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
+      url "https://github.com/go-go-golems/sqleton/releases/download/v0.2.32/sqleton_0.2.32_linux_arm64"
+      sha256 "bde18090e0e72dbd4de727caecc5274d1206452a17a93d9720f9f2a6c6bb61e1"
+      def install
+        bin.install "sqleton_0.2.32_linux_arm64" => "sqleton"
       end
     end
   end
