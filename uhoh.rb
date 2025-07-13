@@ -5,20 +5,20 @@
 class Uhoh < Formula
   desc "uhoh is a tool to build TUI forms and wizards"
   homepage "https://github.com/go-go-golems/uhoh"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/uhoh/releases/download/v0.0.3/uhoh_0.0.3_darwin_amd64.tar.gz"
-      sha256 "dc0ae225762c2e3d7a419f983ed65ae02adb17f193269e280278b964c025d61b"
+      url "https://github.com/go-go-golems/uhoh/releases/download/v0.0.4/uhoh_0.0.4_darwin_amd64.tar.gz"
+      sha256 "c34807e8df72ebd5ec83dfe0724cf05a22f4a45415a6ab67e4b450f69c0dcea1"
 
       def install
         bin.install "uhoh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/uhoh/releases/download/v0.0.3/uhoh_0.0.3_darwin_arm64.tar.gz"
-      sha256 "ffef49829cbe5b35bf8e74539e1c659bdda81597dbc7c14e73b2fc90bcebf900"
+      url "https://github.com/go-go-golems/uhoh/releases/download/v0.0.4/uhoh_0.0.4_darwin_arm64.tar.gz"
+      sha256 "4d30502430fcb0ef0dc2b42ba4b868de8406cc27432809e72d66c95c9f8dd94b"
 
       def install
         bin.install "uhoh"
@@ -27,24 +27,18 @@ class Uhoh < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/go-go-golems/uhoh/releases/download/v0.0.3/uhoh_0.0.3_linux_amd64.tar.gz"
-        sha256 "f478ab4f5ea5f479b1b8890c53dd3a9116f7d5b4caed2f96f2629ef4717ba6b6"
-
-        def install
-          bin.install "uhoh"
-        end
+    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
+      url "https://github.com/go-go-golems/uhoh/releases/download/v0.0.4/uhoh_0.0.4_linux_amd64.tar.gz"
+      sha256 "cbfddbb68ad022af4af1f487ae0b9a091a803dbb8740e45009c4d1a59e24a535"
+      def install
+        bin.install "uhoh"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/go-go-golems/uhoh/releases/download/v0.0.3/uhoh_0.0.3_linux_arm64.tar.gz"
-        sha256 "63c064f65580f54c2a725994f75af89991a423de74761fd793971f0acf9be8fc"
-
-        def install
-          bin.install "uhoh"
-        end
+    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
+      url "https://github.com/go-go-golems/uhoh/releases/download/v0.0.4/uhoh_0.0.4_linux_arm64.tar.gz"
+      sha256 "0b53c073551c6a255b5bf9fcc5b9be4aa1e21d9dffde13fa2eddeac08b32f622"
+      def install
+        bin.install "uhoh"
       end
     end
   end
