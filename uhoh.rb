@@ -5,20 +5,20 @@
 class Uhoh < Formula
   desc "uhoh is a tool to build TUI forms and wizards"
   homepage "https://github.com/go-go-golems/uhoh"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/uhoh/releases/download/v0.0.4/uhoh_0.0.4_darwin_amd64.tar.gz"
-      sha256 "c34807e8df72ebd5ec83dfe0724cf05a22f4a45415a6ab67e4b450f69c0dcea1"
+      url "https://github.com/go-go-golems/uhoh/releases/download/v0.0.5/uhoh_0.0.5_darwin_amd64.tar.gz"
+      sha256 "098de090061e597f02cbd6e440fb4a66c3b889a723ea34fae3d64306e85cdb34"
 
       def install
         bin.install "uhoh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/uhoh/releases/download/v0.0.4/uhoh_0.0.4_darwin_arm64.tar.gz"
-      sha256 "4d30502430fcb0ef0dc2b42ba4b868de8406cc27432809e72d66c95c9f8dd94b"
+      url "https://github.com/go-go-golems/uhoh/releases/download/v0.0.5/uhoh_0.0.5_darwin_arm64.tar.gz"
+      sha256 "1b7e03fc8e6eb7856d2b4a9907a9e2e7f34f06304bbfbc24d74da0f885641f47"
 
       def install
         bin.install "uhoh"
@@ -28,15 +28,15 @@ class Uhoh < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/uhoh/releases/download/v0.0.4/uhoh_0.0.4_linux_amd64.tar.gz"
-      sha256 "cbfddbb68ad022af4af1f487ae0b9a091a803dbb8740e45009c4d1a59e24a535"
+      url "https://github.com/go-go-golems/uhoh/releases/download/v0.0.5/uhoh_0.0.5_linux_amd64.tar.gz"
+      sha256 "547ea9879bbf0710235453e4c8f656673209b8d4912843e40cbdf55cfdaea136"
       def install
         bin.install "uhoh"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/uhoh/releases/download/v0.0.4/uhoh_0.0.4_linux_arm64.tar.gz"
-      sha256 "0b53c073551c6a255b5bf9fcc5b9be4aa1e21d9dffde13fa2eddeac08b32f622"
+      url "https://github.com/go-go-golems/uhoh/releases/download/v0.0.5/uhoh_0.0.5_linux_arm64.tar.gz"
+      sha256 "88ec3fe42a92661209c2856bd6f0949b0f5b7d2c254bd8a8a92a4ac280340c98"
       def install
         bin.install "uhoh"
       end
