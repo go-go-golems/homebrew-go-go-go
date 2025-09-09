@@ -5,20 +5,20 @@
 class VaultEnvrcGenerator < Formula
   desc "vault-envrc-generator is a tool"
   homepage "https://github.com/go-go-golems/vault-envrc-generator"
-  version "0.0.12"
+  version "0.0.13"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/vault-envrc-generator/releases/download/v0.0.12/vault-envrc-generator_0.0.12_darwin_amd64.tar.gz"
-      sha256 "d80f961919e18b99e708f6e383b4c12ee98205638797bbaad7df58ca4e356979"
+      url "https://github.com/go-go-golems/vault-envrc-generator/releases/download/v0.0.13/vault-envrc-generator_0.0.13_darwin_amd64.tar.gz"
+      sha256 "490232c5a282bdf5e73bbfa9d2d264d7d392bea5940640dd5bd2aecb1f944882"
 
       def install
         bin.install "vault-envrc-generator"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/vault-envrc-generator/releases/download/v0.0.12/vault-envrc-generator_0.0.12_darwin_arm64.tar.gz"
-      sha256 "d824c7fb1eab114b0ff47a7477042b956bb11e6a6296255624529ce588a03728"
+      url "https://github.com/go-go-golems/vault-envrc-generator/releases/download/v0.0.13/vault-envrc-generator_0.0.13_darwin_arm64.tar.gz"
+      sha256 "7d0cbb44cad074e3224eaf3b842ece4b66711ea94e76151e1de941060bf2449f"
 
       def install
         bin.install "vault-envrc-generator"
@@ -28,15 +28,15 @@ class VaultEnvrcGenerator < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/vault-envrc-generator/releases/download/v0.0.12/vault-envrc-generator_0.0.12_linux_amd64.tar.gz"
-      sha256 "0be227ca31e211f67faf35348b30549f4bad9307d50b3d612dfc2af803461eb9"
+      url "https://github.com/go-go-golems/vault-envrc-generator/releases/download/v0.0.13/vault-envrc-generator_0.0.13_linux_amd64.tar.gz"
+      sha256 "d0a6d84899f1c184707b1dc2890db33e47050a8f846e3c017d8a947a49a2012a"
       def install
         bin.install "vault-envrc-generator"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/vault-envrc-generator/releases/download/v0.0.12/vault-envrc-generator_0.0.12_linux_arm64.tar.gz"
-      sha256 "19ad7606e1de1151e972e768265b107722a98e5bd073a20eb617d7d78184e495"
+      url "https://github.com/go-go-golems/vault-envrc-generator/releases/download/v0.0.13/vault-envrc-generator_0.0.13_linux_arm64.tar.gz"
+      sha256 "187d04b085595cb4846f3533ca8cc5ba365cc7b80080f2076215a45e92c2cadb"
       def install
         bin.install "vault-envrc-generator"
       end
