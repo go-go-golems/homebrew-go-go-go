@@ -5,20 +5,20 @@
 class Docmgr < Formula
   desc "docmgr is a tool to manage documents when programming with LLMs"
   homepage "https://github.com/go-go-golems/docmgr"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/docmgr/releases/download/v0.0.3/docmgr_0.0.3_darwin_amd64.tar.gz"
-      sha256 "663564e06dd085c3fdde33c054d6999126501d0bffa8b5edf389eb9f6d228d47"
+      url "https://github.com/go-go-golems/docmgr/releases/download/v0.0.4/docmgr_0.0.4_darwin_amd64.tar.gz"
+      sha256 "d022f4854500b00618dd73ef0a5847c9725f1165689f4eb7bed7ef89e53fdcb9"
 
       def install
         bin.install "docmgr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/docmgr/releases/download/v0.0.3/docmgr_0.0.3_darwin_arm64.tar.gz"
-      sha256 "a9d4770ddbcdfbf1cbaa00d08a04a1f31438156c299abc185855bf343d13ea69"
+      url "https://github.com/go-go-golems/docmgr/releases/download/v0.0.4/docmgr_0.0.4_darwin_arm64.tar.gz"
+      sha256 "22bbb11e287f7051bcc47ab7663a139ce5dfb40d08f974db1df4d3cedfa727a5"
 
       def install
         bin.install "docmgr"
@@ -28,15 +28,15 @@ class Docmgr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/docmgr/releases/download/v0.0.3/docmgr_0.0.3_linux_amd64.tar.gz"
-      sha256 "c475ff3d55ba9eb8632147b0742611d8876f2bc8bdcfc8271ed2838f85ffb645"
+      url "https://github.com/go-go-golems/docmgr/releases/download/v0.0.4/docmgr_0.0.4_linux_amd64.tar.gz"
+      sha256 "0440303041b9735cd504b7c2634294fa6d9283399f6ac5b2a84a5d8df33a34de"
       def install
         bin.install "docmgr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/docmgr/releases/download/v0.0.3/docmgr_0.0.3_linux_arm64.tar.gz"
-      sha256 "70be9f7ac7321998fed5e1d779841b1e8a95b18445fc3d19f35aff73287d0c32"
+      url "https://github.com/go-go-golems/docmgr/releases/download/v0.0.4/docmgr_0.0.4_linux_arm64.tar.gz"
+      sha256 "d593de4176d48a040893841fe20b03c2cfa6023f00cc3c2660963075e1d46adb"
       def install
         bin.install "docmgr"
       end
