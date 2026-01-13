@@ -5,20 +5,20 @@
 class PlzConfirm < Formula
   desc "plz-confirm is a tool"
   homepage "https://github.com/go-go-golems/plz-confirm"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/plz-confirm/releases/download/v0.0.2/plz-confirm_0.0.2_darwin_amd64.tar.gz"
-      sha256 "ec8ba6e6ce73edb8203e1554122824ee764bc73dec175c3b0a2de1ac904bf645"
+      url "https://github.com/go-go-golems/plz-confirm/releases/download/v0.0.3/plz-confirm_0.0.3_darwin_amd64.tar.gz"
+      sha256 "e61b2d04b9cd01c751dfbd87ddb659008d7b3347c0d5493000e1ba96acdc2588"
 
       def install
         bin.install "plz-confirm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/plz-confirm/releases/download/v0.0.2/plz-confirm_0.0.2_darwin_arm64.tar.gz"
-      sha256 "f637eacdb61431e0d2e03c45b0a44553f822b8bf6dec1c90641cf4dea92346ca"
+      url "https://github.com/go-go-golems/plz-confirm/releases/download/v0.0.3/plz-confirm_0.0.3_darwin_arm64.tar.gz"
+      sha256 "97a727be6104d3926ca9da9b247680c340df70b3f605c5a5bb65cdbdebf407b0"
 
       def install
         bin.install "plz-confirm"
@@ -28,15 +28,15 @@ class PlzConfirm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/plz-confirm/releases/download/v0.0.2/plz-confirm_0.0.2_linux_amd64.tar.gz"
-      sha256 "537ccdea270d8baf7bd82351a274579d5d33da29081b138ef58a033aabc5170b"
+      url "https://github.com/go-go-golems/plz-confirm/releases/download/v0.0.3/plz-confirm_0.0.3_linux_amd64.tar.gz"
+      sha256 "4e153fceb87dd2f1e5eed36e6da26ac0d9b32fa364f6d890f6b36f3cf8b0244d"
       def install
         bin.install "plz-confirm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/plz-confirm/releases/download/v0.0.2/plz-confirm_0.0.2_linux_arm64.tar.gz"
-      sha256 "c7b1eb6cfa24106da17243e60eb55f4e57fb1d35d4dea3298eac90bb68b3e705"
+      url "https://github.com/go-go-golems/plz-confirm/releases/download/v0.0.3/plz-confirm_0.0.3_linux_arm64.tar.gz"
+      sha256 "41529419718e2518bd5ff2f49e193dedccc1c384bb901e98706dbc33ef438c5d"
       def install
         bin.install "plz-confirm"
       end
