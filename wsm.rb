@@ -5,20 +5,20 @@
 class Wsm < Formula
   desc "wsm is a tool"
   homepage "https://github.com/go-go-golems/workspace-manager"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/workspace-manager/releases/download/v0.0.2/wsm_0.0.2_darwin_amd64.tar.gz"
-      sha256 "d91f476251e0b5d20213e7804545229a2f5dfd5f7ad2b2dba4a12f038d30ea50"
+      url "https://github.com/go-go-golems/workspace-manager/releases/download/v0.0.3/wsm_0.0.3_darwin_amd64.tar.gz"
+      sha256 "835debef8318b95b0d1f08e0c83c6f05d040d852b82a93e487dcc15a3a9375b8"
 
       def install
         bin.install "wsm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/workspace-manager/releases/download/v0.0.2/wsm_0.0.2_darwin_arm64.tar.gz"
-      sha256 "489e3d9a1610256d9c880580c4af7e03b13b2b39cbacbb1c43aadd3eb006d0f0"
+      url "https://github.com/go-go-golems/workspace-manager/releases/download/v0.0.3/wsm_0.0.3_darwin_arm64.tar.gz"
+      sha256 "4629eb15e8cc8c196f6788ca8036b025b134f7c5450e244ce13d704e37cdfdd6"
 
       def install
         bin.install "wsm"
@@ -28,15 +28,15 @@ class Wsm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/workspace-manager/releases/download/v0.0.2/wsm_0.0.2_linux_amd64.tar.gz"
-      sha256 "3b0634e48a011930e560b765d3a5d274d35bc9eb043a89beea4b470726aec90b"
+      url "https://github.com/go-go-golems/workspace-manager/releases/download/v0.0.3/wsm_0.0.3_linux_amd64.tar.gz"
+      sha256 "6b22ac494d4171e92388faafc59c58e3e6ece8e059c59bc7177cddb4bacf24b7"
       def install
         bin.install "wsm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/workspace-manager/releases/download/v0.0.2/wsm_0.0.2_linux_arm64.tar.gz"
-      sha256 "04bf759522fbe0f082b8e51067da2ce7c9db9304de8e23ceaf5fba24d60b9771"
+      url "https://github.com/go-go-golems/workspace-manager/releases/download/v0.0.3/wsm_0.0.3_linux_arm64.tar.gz"
+      sha256 "9124dd8eb164572cf660c0b7f8b8bb3a904f26ea9d548bdd0dfb2c2baac8a272"
       def install
         bin.install "wsm"
       end
