@@ -5,20 +5,20 @@
 class Prescribe < Formula
   desc "Prescribe is a CLI/TUI application for generating pull request descriptions using AI"
   homepage "https://github.com/go-go-golems/prescribe"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/prescribe/releases/download/v0.0.1/prescribe_0.0.1_darwin_amd64.tar.gz"
-      sha256 "11a914d5504998fb92aeb98227459aa14fda8076111aae775c2e470c2fa54aa9"
+      url "https://github.com/go-go-golems/prescribe/releases/download/v0.0.2/prescribe_0.0.2_darwin_amd64.tar.gz"
+      sha256 "27d94f9e51825b90d3d2089f11d29bf0a0283f8ccd2d0f7f609cada3b7a41e92"
 
       def install
         bin.install "prescribe"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/prescribe/releases/download/v0.0.1/prescribe_0.0.1_darwin_arm64.tar.gz"
-      sha256 "de9124a016de52bf0b6faabbc4e38022d4229663fa14c10af0e28ba2ef3ccca2"
+      url "https://github.com/go-go-golems/prescribe/releases/download/v0.0.2/prescribe_0.0.2_darwin_arm64.tar.gz"
+      sha256 "3898e95acee0f9b81579f4be97e762b1e14427c5d22b38eb248548d779043f37"
 
       def install
         bin.install "prescribe"
@@ -28,15 +28,15 @@ class Prescribe < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/prescribe/releases/download/v0.0.1/prescribe_0.0.1_linux_amd64.tar.gz"
-      sha256 "2a4681deb66d4f6485af5414d009068f256e37bc3322510ca428b54ac4303ab1"
+      url "https://github.com/go-go-golems/prescribe/releases/download/v0.0.2/prescribe_0.0.2_linux_amd64.tar.gz"
+      sha256 "dc1364e46db28a0011ef462ecc5c5e00d5d3e731f24873c3e288942072954b88"
       def install
         bin.install "prescribe"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/prescribe/releases/download/v0.0.1/prescribe_0.0.1_linux_arm64.tar.gz"
-      sha256 "48baa0e263e3461d20afa665662989488cfb1619cd2c5ec4106958c47ad3b527"
+      url "https://github.com/go-go-golems/prescribe/releases/download/v0.0.2/prescribe_0.0.2_linux_arm64.tar.gz"
+      sha256 "1d19ea996705357f4f0a9f12d333cc36e8e845a68b4336f7856491b412e90530"
       def install
         bin.install "prescribe"
       end
