@@ -5,20 +5,20 @@
 class GoGoOsBackend < Formula
   desc "Backend host contracts and lifecycle for go-go-os app modules"
   homepage "https://github.com/go-go-golems/go-go-os-backend"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/go-go-os-backend/releases/download/v0.0.2/go-go-os-backend_0.0.2_darwin_amd64.tar.gz"
-      sha256 "230527f29e1835010a39d16f53588c73552d9f03b984cd58cda35b0c01a2c737"
+      url "https://github.com/go-go-golems/go-go-os-backend/releases/download/v0.0.3/go-go-os-backend_0.0.3_darwin_amd64.tar.gz"
+      sha256 "c76430c6fca0f83060f8c8e9a325dd3b4e9a5f13ab85dec96f607d999ea1419a"
 
       define_method(:install) do
         bin.install "go-go-os-backend"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/go-go-os-backend/releases/download/v0.0.2/go-go-os-backend_0.0.2_darwin_arm64.tar.gz"
-      sha256 "f54e3759bfd80821688a96efa159119253eca4ebbf2a826eacf721e3260b29aa"
+      url "https://github.com/go-go-golems/go-go-os-backend/releases/download/v0.0.3/go-go-os-backend_0.0.3_darwin_arm64.tar.gz"
+      sha256 "2a3134d045041d188754d657c18f250e41f1e83a804554f6308b92ccd8c19921"
 
       define_method(:install) do
         bin.install "go-go-os-backend"
@@ -28,15 +28,15 @@ class GoGoOsBackend < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-go-os-backend/releases/download/v0.0.2/go-go-os-backend_0.0.2_linux_amd64.tar.gz"
-      sha256 "e7285296aba562e3bffb28b6074f16892de5548e97ae5187d161d3b2f46a39a2"
+      url "https://github.com/go-go-golems/go-go-os-backend/releases/download/v0.0.3/go-go-os-backend_0.0.3_linux_amd64.tar.gz"
+      sha256 "45f89cadfcbf43b8ac1db7a7e6035fffe54bcc3ed4496fb58319f952b78d71c5"
       define_method(:install) do
         bin.install "go-go-os-backend"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-go-os-backend/releases/download/v0.0.2/go-go-os-backend_0.0.2_linux_arm64.tar.gz"
-      sha256 "7a75da755aaf2f4a22b67a4b94197547daa6e660b1926b03319e06413159a4d4"
+      url "https://github.com/go-go-golems/go-go-os-backend/releases/download/v0.0.3/go-go-os-backend_0.0.3_linux_arm64.tar.gz"
+      sha256 "35217e20225a9e5c140fcd87b70a8be4323ef53e28a492c13dc117e76153fbcd"
       define_method(:install) do
         bin.install "go-go-os-backend"
       end
