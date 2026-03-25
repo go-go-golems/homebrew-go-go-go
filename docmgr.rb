@@ -5,22 +5,22 @@
 class Docmgr < Formula
   desc "docmgr is a tool to manage documents when programming with LLMs"
   homepage "https://github.com/go-go-golems/docmgr"
-  version "0.0.16"
+  version "0.0.17"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/docmgr/releases/download/v0.0.16/docmgr_0.0.16_darwin_amd64.tar.gz"
-      sha256 "2568eed9ef062f0f168cc820b2512113b768f1804e199a9c297b19cf457bda96"
+      url "https://github.com/go-go-golems/docmgr/releases/download/v0.0.17/docmgr_0.0.17_darwin_amd64.tar.gz"
+      sha256 "e382e7b76bd79beac80288ad890cb21bb6338be2230dba04e647c87a93bf83e1"
 
-      def install
+      define_method(:install) do
         bin.install "docmgr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/docmgr/releases/download/v0.0.16/docmgr_0.0.16_darwin_arm64.tar.gz"
-      sha256 "cd8a04e444e6e760d9ffde681e595a29e2d9c1f38219d6e647e49639f238ffe8"
+      url "https://github.com/go-go-golems/docmgr/releases/download/v0.0.17/docmgr_0.0.17_darwin_arm64.tar.gz"
+      sha256 "ed5ef5ed961b0d5f6535aebc25f0ce1a48749a76e81bb29d7ff31044599b7634"
 
-      def install
+      define_method(:install) do
         bin.install "docmgr"
       end
     end
@@ -28,16 +28,16 @@ class Docmgr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/docmgr/releases/download/v0.0.16/docmgr_0.0.16_linux_amd64.tar.gz"
-      sha256 "e57a3fab83528537b3822c26bd504383fdc6a775162ebfdb7782af7fc8ad9c4c"
-      def install
+      url "https://github.com/go-go-golems/docmgr/releases/download/v0.0.17/docmgr_0.0.17_linux_amd64.tar.gz"
+      sha256 "aaf5feb55c1ed69ea96a914b111323e0ba53bce0768aec5f58c6f38c259de784"
+      define_method(:install) do
         bin.install "docmgr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/docmgr/releases/download/v0.0.16/docmgr_0.0.16_linux_arm64.tar.gz"
-      sha256 "30493a5be9a28e8421854ca7b29c845183d17fbc925ae0cbac6ad6e0b24903c9"
-      def install
+      url "https://github.com/go-go-golems/docmgr/releases/download/v0.0.17/docmgr_0.0.17_linux_arm64.tar.gz"
+      sha256 "87d4cfc7a18eb1c68afe25aea46e2b3a61161a06acd24c3acfb44a1b8232ab21"
+      define_method(:install) do
         bin.install "docmgr"
       end
     end
