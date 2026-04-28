@@ -5,22 +5,22 @@
 class Devctl < Formula
   desc "devctl is a tool"
   homepage "https://github.com/go-go-golems/devctl"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/devctl/releases/download/v0.0.1/devctl_0.0.1_darwin_amd64.tar.gz"
-      sha256 "da3375244caaa04bd6cd3c0d5302c3bf41e909e4986550c3f39926b2b66a4506"
+      url "https://github.com/go-go-golems/devctl/releases/download/v0.0.2/devctl_0.0.2_darwin_amd64.tar.gz"
+      sha256 "589fb1cde6e2a384005ff9aacc92b95721460aa6d35a8c8fd3d482de709d8f8a"
 
-      def install
+      define_method(:install) do
         bin.install "devctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/devctl/releases/download/v0.0.1/devctl_0.0.1_darwin_arm64.tar.gz"
-      sha256 "f23b4e064168f9ab4dcb791a59229f3198ee6bf0e0e9b2dcdbfa27fcfe585ef6"
+      url "https://github.com/go-go-golems/devctl/releases/download/v0.0.2/devctl_0.0.2_darwin_arm64.tar.gz"
+      sha256 "caf55e099c5748708a40a017d3e1babb5d2755621ea80febc71eadf2fc77228f"
 
-      def install
+      define_method(:install) do
         bin.install "devctl"
       end
     end
@@ -28,16 +28,16 @@ class Devctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/devctl/releases/download/v0.0.1/devctl_0.0.1_linux_amd64.tar.gz"
-      sha256 "f0da21129f0c715d6ae45da2a9e9dd9adaf22019b4333df94df64acd7c66a717"
-      def install
+      url "https://github.com/go-go-golems/devctl/releases/download/v0.0.2/devctl_0.0.2_linux_amd64.tar.gz"
+      sha256 "0d37c03d144bd4d3646cce4cf8220c5f2d567a50868cd7e0c6d248a454dbc8fc"
+      define_method(:install) do
         bin.install "devctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/devctl/releases/download/v0.0.1/devctl_0.0.1_linux_arm64.tar.gz"
-      sha256 "6c9138ca28c82596125abe50b31a37e2d907666181b771559af2c9a44c9b6c3f"
-      def install
+      url "https://github.com/go-go-golems/devctl/releases/download/v0.0.2/devctl_0.0.2_linux_arm64.tar.gz"
+      sha256 "dced9a08c62681921339844614ed9101985a96c2cbe24bc5aafeb1c8b837f424"
+      define_method(:install) do
         bin.install "devctl"
       end
     end
