@@ -5,20 +5,20 @@
 class LogcopterGen < Formula
   desc "logcopter-gen is a tool"
   homepage "https://github.com/go-go-golems/logcopter"
-  version "0.0.1"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/logcopter/releases/download/v0.0.1/logcopter-gen_0.0.1_darwin_amd64.tar.gz"
-      sha256 "c409f662cf705a129888969af2d194b72efd38bdedab9bfbd9795bdd37adbee8"
+      url "https://github.com/go-go-golems/logcopter/releases/download/v0.1.0/logcopter-gen_0.1.0_darwin_amd64.tar.gz"
+      sha256 "218290e29d5d50f006c180294f3440c101bd3e005eb41e7c0e8da5274e54849e"
 
       define_method(:install) do
         bin.install "logcopter-gen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/logcopter/releases/download/v0.0.1/logcopter-gen_0.0.1_darwin_arm64.tar.gz"
-      sha256 "a4930b1caf8d81f61d3e8cb30e78e66d4d61e662e30b9c874fea3e4e16a83e9c"
+      url "https://github.com/go-go-golems/logcopter/releases/download/v0.1.0/logcopter-gen_0.1.0_darwin_arm64.tar.gz"
+      sha256 "be6fc469e7d62340a3356e02fecb9a75d6bddf55d4a2fe66eee8e14f6fced84e"
 
       define_method(:install) do
         bin.install "logcopter-gen"
@@ -28,15 +28,15 @@ class LogcopterGen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/logcopter/releases/download/v0.0.1/logcopter-gen_0.0.1_linux_amd64.tar.gz"
-      sha256 "a060bccba5bd7a23f59a4e0f01380b8f94fedac0625a93a17045b819b2f89fe4"
+      url "https://github.com/go-go-golems/logcopter/releases/download/v0.1.0/logcopter-gen_0.1.0_linux_amd64.tar.gz"
+      sha256 "4fa4587dc0578f3ac899bf8498a7534776d6c2932f22ba33f5797c94355c2751"
       define_method(:install) do
         bin.install "logcopter-gen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/logcopter/releases/download/v0.0.1/logcopter-gen_0.0.1_linux_arm64.tar.gz"
-      sha256 "445e2b4f5877780964825173cb1a6ad546c57b36d74d4d80c49b11e6509f35ed"
+      url "https://github.com/go-go-golems/logcopter/releases/download/v0.1.0/logcopter-gen_0.1.0_linux_arm64.tar.gz"
+      sha256 "a18230dcc98251af8027dc0363b0f03494bb2204f3b2e5aa67e99fca57438b0d"
       define_method(:install) do
         bin.install "logcopter-gen"
       end
