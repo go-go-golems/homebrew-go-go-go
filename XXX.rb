@@ -5,20 +5,20 @@
 class Xxx < Formula
   desc "XXX is a tool"
   homepage "https://github.com/go-go-golems/XXX"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/goja-git/releases/download/v0.0.1/XXX_0.0.1_darwin_amd64.tar.gz"
-      sha256 "85c74989a76465b4762a94c13ed23558af8ca9756d8aa448b4a56186b5e5515d"
+      url "https://github.com/go-go-golems/goja-git/releases/download/v0.0.2/XXX_0.0.2_darwin_amd64.tar.gz"
+      sha256 "70ef0977fa79652995386cdc4cdca06f3c366c0112393f42d7389e1050e4e4d2"
 
       define_method(:install) do
         bin.install "XXX"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/goja-git/releases/download/v0.0.1/XXX_0.0.1_darwin_arm64.tar.gz"
-      sha256 "281366cab02e2ce217f698a2a429382b00a04bcddf7404c419c5742f63093a14"
+      url "https://github.com/go-go-golems/goja-git/releases/download/v0.0.2/XXX_0.0.2_darwin_arm64.tar.gz"
+      sha256 "71d4d5494b4f525811d6b7a063ed0e0bc8ff8b5a11e8e4fd610014e9d664c72a"
 
       define_method(:install) do
         bin.install "XXX"
@@ -28,15 +28,15 @@ class Xxx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/goja-git/releases/download/v0.0.1/XXX_0.0.1_linux_amd64.tar.gz"
-      sha256 "ce70044190988baf03ae49f893aa97c1b66722c6dd7490f10ee1c79c1cf0793a"
+      url "https://github.com/go-go-golems/goja-git/releases/download/v0.0.2/XXX_0.0.2_linux_amd64.tar.gz"
+      sha256 "7436d292cc942304100abde38bf1014dabb6456f949e0b3627cd25699951efd3"
       define_method(:install) do
         bin.install "XXX"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/goja-git/releases/download/v0.0.1/XXX_0.0.1_linux_arm64.tar.gz"
-      sha256 "34983955359899af502621b431112bb04ee23dde21455766e2de2422d07e71bd"
+      url "https://github.com/go-go-golems/goja-git/releases/download/v0.0.2/XXX_0.0.2_linux_arm64.tar.gz"
+      sha256 "fa7c4c37b811e445f16534c3ee6a7a77c8a702349562ca2196891b807e821e90"
       define_method(:install) do
         bin.install "XXX"
       end
