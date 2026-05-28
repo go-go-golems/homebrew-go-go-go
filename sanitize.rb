@@ -5,20 +5,20 @@
 class Sanitize < Formula
   desc "YAML sanitizer — lint and heuristically fix common YAML errors"
   homepage "https://github.com/go-go-golems/sanitize"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/sanitize/releases/download/v0.0.1/sanitize_0.0.1_darwin_amd64.tar.gz"
-      sha256 "00a9593d8d6acfaeb9db78cc36ee2b6b3866a5943d81c50af0b8033774f664a9"
+      url "https://github.com/go-go-golems/sanitize/releases/download/v0.0.2/sanitize_0.0.2_darwin_amd64.tar.gz"
+      sha256 "bec9f430ed70285eda682cb71d09a933797c5e9a2f478e9f0abf1b9a0261eb5a"
 
       define_method(:install) do
         bin.install "sanitize"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/sanitize/releases/download/v0.0.1/sanitize_0.0.1_darwin_arm64.tar.gz"
-      sha256 "35379b0af35063cb747368d387bd25b47367f2c3e9746c86f8744e34df2de11d"
+      url "https://github.com/go-go-golems/sanitize/releases/download/v0.0.2/sanitize_0.0.2_darwin_arm64.tar.gz"
+      sha256 "a7d68ac204a88677d4f2c8c045ec584e540887d561877c1df5e01578c85a97c4"
 
       define_method(:install) do
         bin.install "sanitize"
@@ -28,15 +28,15 @@ class Sanitize < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/sanitize/releases/download/v0.0.1/sanitize_0.0.1_linux_amd64.tar.gz"
-      sha256 "4fa5bc4d0714a60f74708aa5de51bbc2f4a2e0870a746bac4e00578b64de2ffc"
+      url "https://github.com/go-go-golems/sanitize/releases/download/v0.0.2/sanitize_0.0.2_linux_amd64.tar.gz"
+      sha256 "e7593eb151cc290c39d657fc44bc7c1c4b1a9f09516c1afd2f7975ae1fde0140"
       define_method(:install) do
         bin.install "sanitize"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/sanitize/releases/download/v0.0.1/sanitize_0.0.1_linux_arm64.tar.gz"
-      sha256 "14074babe76de464ef504666f64219ebe58f2afd243537a36be52eaa198de99f"
+      url "https://github.com/go-go-golems/sanitize/releases/download/v0.0.2/sanitize_0.0.2_linux_arm64.tar.gz"
+      sha256 "fc0bd232bee42a529e4e4c065d119a525ea03f0cc432dbae6100a09701cc5413"
       define_method(:install) do
         bin.install "sanitize"
       end
