@@ -5,20 +5,20 @@
 class GoGoAppSqlite < Formula
   desc "go-go-app-sqlite is a sqlite launcher app"
   homepage "https://github.com/go-go-golems/go-go-app-sqlite"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/go-go-app-sqlite/releases/download/v0.0.1/go-go-app-sqlite_0.0.1_darwin_amd64.tar.gz"
-      sha256 "4a84a4463edffd3526e0f2149b2f1a5b770bee62ec92247df903772b93c47086"
+      url "https://github.com/go-go-golems/go-go-app-sqlite/releases/download/v0.0.2/go-go-app-sqlite_0.0.2_darwin_amd64.tar.gz"
+      sha256 "2cd21a61049e821d57f9b2683a8e33e1cfa224fe5339af9bb4f60ad67b9075c7"
 
       define_method(:install) do
         bin.install "go-go-app-sqlite"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/go-go-app-sqlite/releases/download/v0.0.1/go-go-app-sqlite_0.0.1_darwin_arm64.tar.gz"
-      sha256 "1eb95de04d12467f926fbd9ccec9f4306193da3dba48e44ff0ab4c6fe564f375"
+      url "https://github.com/go-go-golems/go-go-app-sqlite/releases/download/v0.0.2/go-go-app-sqlite_0.0.2_darwin_arm64.tar.gz"
+      sha256 "317cefcf071fa234099ce5bc939f3a5ee957a0379942ff96c768206dc03e3991"
 
       define_method(:install) do
         bin.install "go-go-app-sqlite"
@@ -28,15 +28,15 @@ class GoGoAppSqlite < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-go-app-sqlite/releases/download/v0.0.1/go-go-app-sqlite_0.0.1_linux_amd64.tar.gz"
-      sha256 "61d8107087247aa743321b4336b82d38d95d8d775f64b49f13e7634db33b3f30"
+      url "https://github.com/go-go-golems/go-go-app-sqlite/releases/download/v0.0.2/go-go-app-sqlite_0.0.2_linux_amd64.tar.gz"
+      sha256 "6ed40509838148f20a9d0ab3a3203e09253157a9403ed3c30b8b6c2320c8763f"
       define_method(:install) do
         bin.install "go-go-app-sqlite"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-go-app-sqlite/releases/download/v0.0.1/go-go-app-sqlite_0.0.1_linux_arm64.tar.gz"
-      sha256 "106f3a8c291b37a957e5adb9e22235e848f159607d9f1bc92e0f2ae3c97d50d6"
+      url "https://github.com/go-go-golems/go-go-app-sqlite/releases/download/v0.0.2/go-go-app-sqlite_0.0.2_linux_arm64.tar.gz"
+      sha256 "9a462ad73b21acd09ba317883e0769033a3f44bb47de910d54048412fe7c6226"
       define_method(:install) do
         bin.install "go-go-app-sqlite"
       end
