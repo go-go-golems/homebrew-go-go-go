@@ -5,20 +5,20 @@
 class GoGoAppArcAgi < Formula
   desc "go-go-app-arc-agi provides backend module integration for ARC-AGI."
   homepage "https://github.com/go-go-golems/go-go-app-arc-agi"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/go-go-app-arc-agi/releases/download/v0.0.1/go-go-app-arc-agi_0.0.1_darwin_amd64.tar.gz"
-      sha256 "59e4c5d14a9377e1bed94fcad20d2c82b54135ed08ff6cbdf76f49792e1d0f15"
+      url "https://github.com/go-go-golems/go-go-app-arc-agi/releases/download/v0.0.2/go-go-app-arc-agi_0.0.2_darwin_amd64.tar.gz"
+      sha256 "ecccbd2daf9beaed612a84a3617f1c4c731c24988d078dace3998a8b2a4d255d"
 
       define_method(:install) do
         bin.install "go-go-app-arc-agi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/go-go-app-arc-agi/releases/download/v0.0.1/go-go-app-arc-agi_0.0.1_darwin_arm64.tar.gz"
-      sha256 "a7c8962125159e7a4ab06daf7926c875cfd019940919b4127332305a183371d2"
+      url "https://github.com/go-go-golems/go-go-app-arc-agi/releases/download/v0.0.2/go-go-app-arc-agi_0.0.2_darwin_arm64.tar.gz"
+      sha256 "1acbaf92134b85aa0af56680292b489774ae7f82e3e1cca5042b2209b10fe67a"
 
       define_method(:install) do
         bin.install "go-go-app-arc-agi"
@@ -28,15 +28,15 @@ class GoGoAppArcAgi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-go-app-arc-agi/releases/download/v0.0.1/go-go-app-arc-agi_0.0.1_linux_amd64.tar.gz"
-      sha256 "660a824942663c12671bde0d3467c53a010a52a9059201c0387461f2a28e9fc8"
+      url "https://github.com/go-go-golems/go-go-app-arc-agi/releases/download/v0.0.2/go-go-app-arc-agi_0.0.2_linux_amd64.tar.gz"
+      sha256 "9970b4a3fcbd3e8797664f8c33aa945d9c034c55d397c2d388dee0b25c7a2f08"
       define_method(:install) do
         bin.install "go-go-app-arc-agi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-go-app-arc-agi/releases/download/v0.0.1/go-go-app-arc-agi_0.0.1_linux_arm64.tar.gz"
-      sha256 "a6460cae3e191eecadf1969022628c925c24b5fb4c7f596243747baff3798617"
+      url "https://github.com/go-go-golems/go-go-app-arc-agi/releases/download/v0.0.2/go-go-app-arc-agi_0.0.2_linux_arm64.tar.gz"
+      sha256 "3ac8d11aa768233e8404aa67322ba6d09f92ecd92c8d9a2d6aa7a6f565643c96"
       define_method(:install) do
         bin.install "go-go-app-arc-agi"
       end
