@@ -5,20 +5,20 @@
 class CssVisualDiff < Formula
   desc "css-visual-diff compares rendered HTML/CSS across two browser targets."
   homepage "https://github.com/go-go-golems/css-visual-diff"
-  version "0.1.5"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/css-visual-diff/releases/download/v0.1.5/css-visual-diff_0.1.5_darwin_amd64.tar.gz"
-      sha256 "3234b593758976171f6828db5a7db2d74acfa939d61cd9aec32282944e9b17db"
+      url "https://github.com/go-go-golems/css-visual-diff/releases/download/v0.2.0/css-visual-diff_0.2.0_darwin_amd64.tar.gz"
+      sha256 "8639f1ccf136de352cce072f790bdd2ea71d8e8eff9665af612a73ced323698b"
 
       define_method(:install) do
         bin.install "css-visual-diff"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/css-visual-diff/releases/download/v0.1.5/css-visual-diff_0.1.5_darwin_arm64.tar.gz"
-      sha256 "737cf74ae7ddaad36782421758af199aa574ce9025286d16d620892edd3da270"
+      url "https://github.com/go-go-golems/css-visual-diff/releases/download/v0.2.0/css-visual-diff_0.2.0_darwin_arm64.tar.gz"
+      sha256 "44434e1b92105c2f42faa4ee087997f1caec456564a7526d492795e6ad2ba32d"
 
       define_method(:install) do
         bin.install "css-visual-diff"
@@ -28,15 +28,15 @@ class CssVisualDiff < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/css-visual-diff/releases/download/v0.1.5/css-visual-diff_0.1.5_linux_amd64.tar.gz"
-      sha256 "6cb6fdb9502524ea20e53fd363828861ba4e8d8b03847836dd7476cf71d69010"
+      url "https://github.com/go-go-golems/css-visual-diff/releases/download/v0.2.0/css-visual-diff_0.2.0_linux_amd64.tar.gz"
+      sha256 "77352bc32298f25f387bc22505944984b7fa58caeb37e8fab56af6487fcc096c"
       define_method(:install) do
         bin.install "css-visual-diff"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/css-visual-diff/releases/download/v0.1.5/css-visual-diff_0.1.5_linux_arm64.tar.gz"
-      sha256 "06b7dd8fb0c20f1dbc7b5487a9ae9c2535843fec2069d49f3e739779a18120d7"
+      url "https://github.com/go-go-golems/css-visual-diff/releases/download/v0.2.0/css-visual-diff_0.2.0_linux_arm64.tar.gz"
+      sha256 "6ecb7c965d6046cb5084e4cafea9c6faf9edae791627e42268ad08fb60080d12"
       define_method(:install) do
         bin.install "css-visual-diff"
       end
