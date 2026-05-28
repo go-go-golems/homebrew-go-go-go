@@ -5,20 +5,20 @@
 class Cozo < Formula
   desc "cozo is a goja-based CLI for the CozoDB JavaScript API"
   homepage "https://github.com/go-go-golems/cozodb-goja"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/cozodb-goja/releases/download/v0.0.1/cozo_0.0.1_darwin_amd64.tar.gz"
-      sha256 "6f33979a2ccbc4372ae7047de4621705ba9ba1decf18f23138f9a62d599f09cc"
+      url "https://github.com/go-go-golems/cozodb-goja/releases/download/v0.0.2/cozo_0.0.2_darwin_amd64.tar.gz"
+      sha256 "7efa594c794b4bdea12cb98d0222c582babc92d89b67371dd132f61a15ff0b73"
 
       define_method(:install) do
         bin.install "cozo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/cozodb-goja/releases/download/v0.0.1/cozo_0.0.1_darwin_arm64.tar.gz"
-      sha256 "a31e9a57ca3ce5c88df21492c87a2ac91023d5b748afabc2f6685f795e99c109"
+      url "https://github.com/go-go-golems/cozodb-goja/releases/download/v0.0.2/cozo_0.0.2_darwin_arm64.tar.gz"
+      sha256 "577ad46bab7aaef4f8f44c9e7752518745f550a4fcb8dbe96e50764ce3da0ab4"
 
       define_method(:install) do
         bin.install "cozo"
@@ -28,15 +28,15 @@ class Cozo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/cozodb-goja/releases/download/v0.0.1/cozo_0.0.1_linux_amd64.tar.gz"
-      sha256 "71a1ee4b941d8b6095a24f1e607bf4d3fd49b655e4ad25a9392af87c29973b73"
+      url "https://github.com/go-go-golems/cozodb-goja/releases/download/v0.0.2/cozo_0.0.2_linux_amd64.tar.gz"
+      sha256 "b74a291661cb83a424b3e1daf6eefa96fd8b301f2fc59fda7d2758fda543375f"
       define_method(:install) do
         bin.install "cozo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/cozodb-goja/releases/download/v0.0.1/cozo_0.0.1_linux_arm64.tar.gz"
-      sha256 "e78f4d39b9e33dff5bd323ac8772d4f4f48133a4f4683b1b13b3cdcef1298dba"
+      url "https://github.com/go-go-golems/cozodb-goja/releases/download/v0.0.2/cozo_0.0.2_linux_arm64.tar.gz"
+      sha256 "b7d3b689841b5a14ccfca81829f4e89a17ff97323fe1445531387364e92ee76d"
       define_method(:install) do
         bin.install "cozo"
       end
