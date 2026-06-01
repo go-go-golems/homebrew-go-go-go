@@ -5,20 +5,20 @@
 class Scraper < Formula
   desc "scraper is a tool"
   homepage "https://github.com/go-go-golems/scraper"
-  version "0.0.2"
+  version "0.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/scraper/releases/download/v0.0.2/scraper_0.0.2_darwin_amd64.tar.gz"
-      sha256 "a0d067a6fba1f4515bf08e92b27320b48a314b3766f6a1a37f454bff8416a1f4"
+      url "https://github.com/go-go-golems/scraper/releases/download/v0.0.1/scraper_0.0.1_darwin_amd64.tar.gz"
+      sha256 "7ed3b3f046ae33ceb4a5ba4e2ac79f99d96fb60f15094ac4d8384ce0f0e9bf1e"
 
       define_method(:install) do
         bin.install "scraper"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/scraper/releases/download/v0.0.2/scraper_0.0.2_darwin_arm64.tar.gz"
-      sha256 "13f3eb37d63ee6117db1173cc9533aced7523b4ac362727adc58e437b7d84608"
+      url "https://github.com/go-go-golems/scraper/releases/download/v0.0.1/scraper_0.0.1_darwin_arm64.tar.gz"
+      sha256 "f708a0def5880945ce3cd2a1b6e496d16adf22557e6c961752807879f2d42249"
 
       define_method(:install) do
         bin.install "scraper"
@@ -28,15 +28,15 @@ class Scraper < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/scraper/releases/download/v0.0.2/scraper_0.0.2_linux_amd64.tar.gz"
-      sha256 "9649020af2432ed9eeda0da16929b4a1505f1cab340e0ce8d7c450f18d486fe0"
+      url "https://github.com/go-go-golems/scraper/releases/download/v0.0.1/scraper_0.0.1_linux_amd64.tar.gz"
+      sha256 "85284348ce080fc6383cdde6a6e30ac397a055f4b402f5326673d7021119064c"
       define_method(:install) do
         bin.install "scraper"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/scraper/releases/download/v0.0.2/scraper_0.0.2_linux_arm64.tar.gz"
-      sha256 "9d4105bdd2344688bc0bedb4bbcd78e3826024a7bb36d71429d263f5446b3329"
+      url "https://github.com/go-go-golems/scraper/releases/download/v0.0.1/scraper_0.0.1_linux_arm64.tar.gz"
+      sha256 "eafd38918b13acefbb590c0bec2c0bc26e1eda3a62ef77594cd64b70e5841b7c"
       define_method(:install) do
         bin.install "scraper"
       end
