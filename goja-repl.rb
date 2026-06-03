@@ -5,20 +5,20 @@
 class GojaRepl < Formula
   desc "goja-repl is a Goja-based JavaScript REPL and tooling entrypoint."
   homepage "https://github.com/go-go-golems/go-go-goja"
-  version "0.7.4"
+  version "0.7.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/go-go-goja/releases/download/v0.7.4/go-go-goja_0.7.4_darwin_amd64.tar.gz"
-      sha256 "a1efc7f0e0517d2a1081686ef6efba059f2beede11fb103f4fb35dba6630cd87"
+      url "https://github.com/go-go-golems/go-go-goja/releases/download/v0.7.5/go-go-goja_0.7.5_darwin_amd64.tar.gz"
+      sha256 "4d5150ff1632b32ae17eafd18dcd67de4f486242ccf1a2a8e1bfe8ea6e9847b3"
 
       define_method(:install) do
         bin.install "goja-repl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/go-go-goja/releases/download/v0.7.4/go-go-goja_0.7.4_darwin_arm64.tar.gz"
-      sha256 "0626ea84846918b9dd0c8f3e52e24988ea7c3e4fc005c6c118c04a119d08ee89"
+      url "https://github.com/go-go-golems/go-go-goja/releases/download/v0.7.5/go-go-goja_0.7.5_darwin_arm64.tar.gz"
+      sha256 "f31f9fe53030d585d1e6cee96ec1b37fcfb5553836330115dbb6f15188e60f2c"
 
       define_method(:install) do
         bin.install "goja-repl"
@@ -28,15 +28,15 @@ class GojaRepl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-go-goja/releases/download/v0.7.4/go-go-goja_0.7.4_linux_amd64.tar.gz"
-      sha256 "d1ef554a98e470ad6e52b067bbf39abd730c5cca9cd9970848a9c20e55b4f7d6"
+      url "https://github.com/go-go-golems/go-go-goja/releases/download/v0.7.5/go-go-goja_0.7.5_linux_amd64.tar.gz"
+      sha256 "e3824750a6e8ca8fcd39ed59da2dc6d76918054548fe316dc06787495324f24d"
       define_method(:install) do
         bin.install "goja-repl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-go-goja/releases/download/v0.7.4/go-go-goja_0.7.4_linux_arm64.tar.gz"
-      sha256 "9e1429bbbd24e37c2e0c2df4fd9cfdcad8d729499c1dbb9888b8dab45cdfac79"
+      url "https://github.com/go-go-golems/go-go-goja/releases/download/v0.7.5/go-go-goja_0.7.5_linux_arm64.tar.gz"
+      sha256 "4843aa7add968f59f40b5a78215ef98689591928ccddecfc768cb152573ae08c"
       define_method(:install) do
         bin.install "goja-repl"
       end
