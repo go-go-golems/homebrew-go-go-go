@@ -5,20 +5,20 @@
 class GojaGha < Formula
   desc "Run GitHub Actions-oriented JavaScript on top of Goja"
   homepage "https://github.com/go-go-golems/goja-github-actions"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/goja-github-actions/releases/download/v0.0.1/goja-github-actions_0.0.1_darwin_amd64.tar.gz"
-      sha256 "da3d19809fedfef6359f2b012086820618702b72493098eaa56050a89e6a91b1"
+      url "https://github.com/go-go-golems/goja-github-actions/releases/download/v0.0.2/goja-github-actions_0.0.2_darwin_amd64.tar.gz"
+      sha256 "5b94d196058cc50351227d886becb2adc67ce75247e14f4b57aca3991d84d2ef"
 
       define_method(:install) do
         bin.install "goja-gha"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/goja-github-actions/releases/download/v0.0.1/goja-github-actions_0.0.1_darwin_arm64.tar.gz"
-      sha256 "c1eb1e7962ec96f131d05ee47b6b59d20cf605a1ec4c5fed87dac734e27c5a26"
+      url "https://github.com/go-go-golems/goja-github-actions/releases/download/v0.0.2/goja-github-actions_0.0.2_darwin_arm64.tar.gz"
+      sha256 "8017dc0d1f8937841b6fe709a62e5a19e7360b0019ca2ecc14008498191b7f32"
 
       define_method(:install) do
         bin.install "goja-gha"
@@ -28,15 +28,15 @@ class GojaGha < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/goja-github-actions/releases/download/v0.0.1/goja-github-actions_0.0.1_linux_amd64.tar.gz"
-      sha256 "c6f2ec97ba1dea5ad75efa214d98415c13727a8918265e0dabc60fa67c122593"
+      url "https://github.com/go-go-golems/goja-github-actions/releases/download/v0.0.2/goja-github-actions_0.0.2_linux_amd64.tar.gz"
+      sha256 "628e8845b8482a9706a5de6239636ce5afb77295cda8bcba70a8e97ae679f6c5"
       define_method(:install) do
         bin.install "goja-gha"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/goja-github-actions/releases/download/v0.0.1/goja-github-actions_0.0.1_linux_arm64.tar.gz"
-      sha256 "9ab6e1010db16fcdfab937db311188f99b91f463ac4036aac547a216c0560318"
+      url "https://github.com/go-go-golems/goja-github-actions/releases/download/v0.0.2/goja-github-actions_0.0.2_linux_arm64.tar.gz"
+      sha256 "97cb92889f48f7c48d16925b58af08bcad17cbf9e49b4bff92229ed31b435ee4"
       define_method(:install) do
         bin.install "goja-gha"
       end
