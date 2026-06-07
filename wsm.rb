@@ -5,20 +5,20 @@
 class Wsm < Formula
   desc "wsm is a tool"
   homepage "https://github.com/go-go-golems/workspace-manager"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/workspace-manager/releases/download/v0.1.0/wsm_0.1.0_darwin_amd64.tar.gz"
-      sha256 "d74c75c74b21fd38d0cb08485c1b87ed5e39d94958e27fac2fbff6c17194f177"
+      url "https://github.com/go-go-golems/workspace-manager/releases/download/v0.1.1/wsm_0.1.1_darwin_amd64.tar.gz"
+      sha256 "dd2e8d97f71902805990c78b44727acf1706cc1b742412807a7d902bdaeb384d"
 
       define_method(:install) do
         bin.install "wsm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/workspace-manager/releases/download/v0.1.0/wsm_0.1.0_darwin_arm64.tar.gz"
-      sha256 "133fd57a7ed6cf158b51653303b1e58306f166febed30f8d09d6c35a049a2d20"
+      url "https://github.com/go-go-golems/workspace-manager/releases/download/v0.1.1/wsm_0.1.1_darwin_arm64.tar.gz"
+      sha256 "63234e1d6932cf7b90b419a202b02cd5b5d881396b792430130beddf0d8b369d"
 
       define_method(:install) do
         bin.install "wsm"
@@ -28,15 +28,15 @@ class Wsm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/workspace-manager/releases/download/v0.1.0/wsm_0.1.0_linux_amd64.tar.gz"
-      sha256 "49da3364fce44789e2eb234ee8ead81067cca94a807d0d8eead807850ee18857"
+      url "https://github.com/go-go-golems/workspace-manager/releases/download/v0.1.1/wsm_0.1.1_linux_amd64.tar.gz"
+      sha256 "bb9ddbea03c081397afbfa85a5746cd3ce5645d85e91c99580967b4ec1e82064"
       define_method(:install) do
         bin.install "wsm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/workspace-manager/releases/download/v0.1.0/wsm_0.1.0_linux_arm64.tar.gz"
-      sha256 "e921c0791dddadcdb4c59ca972a9a0d5da6b3b7c24579ea9564154b37659c868"
+      url "https://github.com/go-go-golems/workspace-manager/releases/download/v0.1.1/wsm_0.1.1_linux_arm64.tar.gz"
+      sha256 "57f27b8ddf5e58ff4021656f92f3e222eca7fb30071b7bd3059d1592a37727a3"
       define_method(:install) do
         bin.install "wsm"
       end
