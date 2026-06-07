@@ -5,20 +5,20 @@
 class GojaGit < Formula
   desc "Run JavaScript scripts with Git bindings"
   homepage "https://github.com/go-go-golems/goja-git"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/goja-git/releases/download/v0.1.0/goja-git_0.1.0_darwin_amd64.tar.gz"
-      sha256 "837dcfd0d0723d33b322cc02ca3f01ce0823e87a70ad280af4694a1cf68da4e6"
+      url "https://github.com/go-go-golems/goja-git/releases/download/v0.1.1/goja-git_0.1.1_darwin_amd64.tar.gz"
+      sha256 "3e112aadcf317800ad1db0ee06e6e2028e75bcfbcda979502de5e4cb2b9adcd1"
 
       define_method(:install) do
         bin.install "goja-git"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/goja-git/releases/download/v0.1.0/goja-git_0.1.0_darwin_arm64.tar.gz"
-      sha256 "70b3416ad9b9c3d78f20341abedc47df4ef66bfb2a81f714090aac33e3e743b2"
+      url "https://github.com/go-go-golems/goja-git/releases/download/v0.1.1/goja-git_0.1.1_darwin_arm64.tar.gz"
+      sha256 "2aeddf558d4f5e9dfb60a9312ea404cdd52162522c4b930e3f6c63fbbc28cef3"
 
       define_method(:install) do
         bin.install "goja-git"
@@ -28,15 +28,15 @@ class GojaGit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/goja-git/releases/download/v0.1.0/goja-git_0.1.0_linux_amd64.tar.gz"
-      sha256 "c4d41ac0f2ccdf54237302f947723f9543c98e12569c7422d6bca68ee406dadc"
+      url "https://github.com/go-go-golems/goja-git/releases/download/v0.1.1/goja-git_0.1.1_linux_amd64.tar.gz"
+      sha256 "4fb668e2bf15eebcae89a79ef9d8c96dd80b208840393b8563c4ff966914cc42"
       define_method(:install) do
         bin.install "goja-git"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/goja-git/releases/download/v0.1.0/goja-git_0.1.0_linux_arm64.tar.gz"
-      sha256 "9bb40fb85b6db8083d28347957700ed579361906003fb0d1bc1a066f3d0e38e5"
+      url "https://github.com/go-go-golems/goja-git/releases/download/v0.1.1/goja-git_0.1.1_linux_arm64.tar.gz"
+      sha256 "e1e75bba457f401456f731d235caaec6bc57b3032def9b2783b8227711a7a7ab"
       define_method(:install) do
         bin.install "goja-git"
       end
