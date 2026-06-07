@@ -5,20 +5,20 @@
 class DiscordBot < Formula
   desc "Go-hosted Discord bot runtime with a JavaScript authoring API"
   homepage "https://github.com/go-go-golems/discord-bot"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/discord-bot/releases/download/v0.2.0/discord-bot_0.2.0_darwin_amd64.tar.gz"
-      sha256 "a6fd70b5d2399b4ee72a1bc48e11c9d678ad46fcd10a17cf66080120059b2414"
+      url "https://github.com/go-go-golems/discord-bot/releases/download/v0.2.1/discord-bot_0.2.1_darwin_amd64.tar.gz"
+      sha256 "4f312230cf7b48e0610f85b450c02cb627cdce0fbaa8ff78c9f8a1792567cf87"
 
       define_method(:install) do
         bin.install "discord-bot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/discord-bot/releases/download/v0.2.0/discord-bot_0.2.0_darwin_arm64.tar.gz"
-      sha256 "a683d67cc7125fe735549228d399520ca4edc6f5ccbcead00bc0d0f9a2a6e066"
+      url "https://github.com/go-go-golems/discord-bot/releases/download/v0.2.1/discord-bot_0.2.1_darwin_arm64.tar.gz"
+      sha256 "2a4f23caf9ee07de8fda5d5673f0f97293e00557c46d1cfdbb392b15c2f2f29d"
 
       define_method(:install) do
         bin.install "discord-bot"
@@ -28,15 +28,15 @@ class DiscordBot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/discord-bot/releases/download/v0.2.0/discord-bot_0.2.0_linux_amd64.tar.gz"
-      sha256 "4c21282f1979383a77825aa128c734677026ded8da63f1877611565e560c7b34"
+      url "https://github.com/go-go-golems/discord-bot/releases/download/v0.2.1/discord-bot_0.2.1_linux_amd64.tar.gz"
+      sha256 "e1ebd0c19af9bb941bdacf8f4305de710d20066c1266bc43ac9b77a93486cb08"
       define_method(:install) do
         bin.install "discord-bot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/discord-bot/releases/download/v0.2.0/discord-bot_0.2.0_linux_arm64.tar.gz"
-      sha256 "b0750521a0690596a5d1741a0cdb35a17004f5494f91796883f7fd1451120653"
+      url "https://github.com/go-go-golems/discord-bot/releases/download/v0.2.1/discord-bot_0.2.1_linux_arm64.tar.gz"
+      sha256 "4870a52fffcef18c1d01fe89ce803af2f43290974508cbb0a209724c0e16254d"
       define_method(:install) do
         bin.install "discord-bot"
       end
