@@ -5,20 +5,20 @@
 class GoGoHost < Formula
   desc "go-go-host is a hosting platform control-plane CLI"
   homepage "https://github.com/go-go-golems/go-go-host"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/go-go-host/releases/download/v0.0.1/go-go-host_0.0.1_darwin_amd64.tar.gz"
-      sha256 "901fd943287c3686d2f7315250aaaad89bde8c85282ab3215a5af2f8b8379887"
+      url "https://github.com/go-go-golems/go-go-host/releases/download/v0.0.2/go-go-host_0.0.2_darwin_amd64.tar.gz"
+      sha256 "1ace889a8c075455507cbfa5a16ac50e403ebc1cf426252eeb7e786e26010717"
 
       define_method(:install) do
         bin.install "go-go-host"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/go-go-host/releases/download/v0.0.1/go-go-host_0.0.1_darwin_arm64.tar.gz"
-      sha256 "f488ef1b5f47f9432a27579728e1b67c137b349a33dc781612260125bd04262c"
+      url "https://github.com/go-go-golems/go-go-host/releases/download/v0.0.2/go-go-host_0.0.2_darwin_arm64.tar.gz"
+      sha256 "36395bbfca439a9e9798d715fac139a40e04c3bed82f656c555b7ff7d484980e"
 
       define_method(:install) do
         bin.install "go-go-host"
@@ -28,15 +28,15 @@ class GoGoHost < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-go-host/releases/download/v0.0.1/go-go-host_0.0.1_linux_amd64.tar.gz"
-      sha256 "f0dfd39e79511cc5134371ec3f5bd520b08b62381504a7c913269bf96463965d"
+      url "https://github.com/go-go-golems/go-go-host/releases/download/v0.0.2/go-go-host_0.0.2_linux_amd64.tar.gz"
+      sha256 "4e4025806a828f837df37fadbe3e1e068fe6970ddf75671c7043ac91033840d9"
       define_method(:install) do
         bin.install "go-go-host"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-go-host/releases/download/v0.0.1/go-go-host_0.0.1_linux_arm64.tar.gz"
-      sha256 "96d5ff19f7b0ceb93b7a26c16316bd095bc47aad37e172bf7d280d867a517c00"
+      url "https://github.com/go-go-golems/go-go-host/releases/download/v0.0.2/go-go-host_0.0.2_linux_arm64.tar.gz"
+      sha256 "68f93481e78c856f2242d10e1c107b188047e7e277807338c3c6aa0f9f61315a"
       define_method(:install) do
         bin.install "go-go-host"
       end
