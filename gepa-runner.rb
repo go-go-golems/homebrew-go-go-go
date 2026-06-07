@@ -5,20 +5,20 @@
 class GepaRunner < Formula
   desc "GEPA-style prompt optimization and benchmarking runner built on Geppetto"
   homepage "https://github.com/go-go-golems/go-go-gepa"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/go-go-gepa/releases/download/v0.0.2/go-go-gepa_0.0.2_darwin_amd64.tar.gz"
-      sha256 "2802afefee2694d1265bd49f0dff239acf90f235c4dceb9e158f4d21850a3714"
+      url "https://github.com/go-go-golems/go-go-gepa/releases/download/v0.0.3/go-go-gepa_0.0.3_darwin_amd64.tar.gz"
+      sha256 "791d5ebf578542a1f0be4c494a053281ddcbd477e5ade7ab336be7beb4dd188c"
 
       define_method(:install) do
         bin.install "gepa-runner"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/go-go-gepa/releases/download/v0.0.2/go-go-gepa_0.0.2_darwin_arm64.tar.gz"
-      sha256 "ed2b1adcbb9d0c4ea2c461c96f2b06a4bbcf8d3fe93d432e505f1c92b0c31445"
+      url "https://github.com/go-go-golems/go-go-gepa/releases/download/v0.0.3/go-go-gepa_0.0.3_darwin_arm64.tar.gz"
+      sha256 "d67debd2be4879f97ff3325ed14671b3994faa5a0b3914ef712f8285554f9c44"
 
       define_method(:install) do
         bin.install "gepa-runner"
@@ -28,15 +28,15 @@ class GepaRunner < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-go-gepa/releases/download/v0.0.2/go-go-gepa_0.0.2_linux_amd64.tar.gz"
-      sha256 "cc72627a30690e49905cd851ae5fbf5119315cbda7db7e45bd93203bf61bf171"
+      url "https://github.com/go-go-golems/go-go-gepa/releases/download/v0.0.3/go-go-gepa_0.0.3_linux_amd64.tar.gz"
+      sha256 "7558c3fba553199a53661b197ac28fdd309af4bc8b907c27a77473252a212640"
       define_method(:install) do
         bin.install "gepa-runner"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-go-gepa/releases/download/v0.0.2/go-go-gepa_0.0.2_linux_arm64.tar.gz"
-      sha256 "ef1081a45dab4c99b613c2b20736a007687568eb067b6f5764720c844ec253ef"
+      url "https://github.com/go-go-golems/go-go-gepa/releases/download/v0.0.3/go-go-gepa_0.0.3_linux_arm64.tar.gz"
+      sha256 "f30baa2906c8b3eb86eb0c682a00f8bb1ccdba87d1a46515ebbfa354d0dae9ce"
       define_method(:install) do
         bin.install "gepa-runner"
       end
