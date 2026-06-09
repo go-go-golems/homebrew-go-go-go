@@ -5,20 +5,20 @@
 class GojaText < Formula
   desc "goja-text provides Go-backed xgoja text modules and helper commands."
   homepage "https://github.com/go-go-golems/goja-text"
-  version "0.0.6"
+  version "0.0.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/goja-text/releases/download/v0.0.6/goja-text_0.0.6_darwin_amd64.tar.gz"
-      sha256 "0e12649a03d451085749cfdb2f0c98bf3c7b208eb6a2087c7446b7c0386e38a1"
+      url "https://github.com/go-go-golems/goja-text/releases/download/v0.0.7/goja-text_0.0.7_darwin_amd64.tar.gz"
+      sha256 "6bcec978b742dfc7b6c230221ada0b3858b1ae3a08c9ae512600a3d734451cb2"
 
       define_method(:install) do
         bin.install "goja-text"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/goja-text/releases/download/v0.0.6/goja-text_0.0.6_darwin_arm64.tar.gz"
-      sha256 "1be9d6bab8d1530ac23c8f5502339e4690e3efaac56c507f05323783de7e435d"
+      url "https://github.com/go-go-golems/goja-text/releases/download/v0.0.7/goja-text_0.0.7_darwin_arm64.tar.gz"
+      sha256 "b986e98e5f18ccfe03b165ccad12e552801321d294261e49a35a1d5a24d824f2"
 
       define_method(:install) do
         bin.install "goja-text"
@@ -28,15 +28,15 @@ class GojaText < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/goja-text/releases/download/v0.0.6/goja-text_0.0.6_linux_amd64.tar.gz"
-      sha256 "5ac475d635b78e64260e3cb48a7d118ba8464f486cb368a39b65bff0ddb59d93"
+      url "https://github.com/go-go-golems/goja-text/releases/download/v0.0.7/goja-text_0.0.7_linux_amd64.tar.gz"
+      sha256 "df35c9eb235b450cd7f4cecf8838cf301ac812e2d3d303d762cafba021af3742"
       define_method(:install) do
         bin.install "goja-text"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/goja-text/releases/download/v0.0.6/goja-text_0.0.6_linux_arm64.tar.gz"
-      sha256 "8401dab4732027225b8f11ad997765e42db6b197ae1be82160ad32eb85a5c3f6"
+      url "https://github.com/go-go-golems/goja-text/releases/download/v0.0.7/goja-text_0.0.7_linux_arm64.tar.gz"
+      sha256 "f4c9c11dc83165fc1b9a8fc3c9e275cb87097846133f0a1fbfae490b0068f512"
       define_method(:install) do
         bin.install "goja-text"
       end
