@@ -5,20 +5,20 @@
 class GoGoObjects < Formula
   desc "Durable Objects runtime for goja and xgoja"
   homepage "https://github.com/go-go-golems/go-go-objects"
-  version "0.0.2"
+  version "0.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/go-go-objects/releases/download/v0.0.2/go-go-objects_0.0.2_darwin_amd64.tar.gz"
-      sha256 "d58eac772ccfcc856e345e26a41cc762270fef5f3689da6381247089e1ea5149"
+      url "https://github.com/go-go-golems/go-go-objects/releases/download/v0.0.1/go-go-objects_0.0.1_darwin_amd64.tar.gz"
+      sha256 "36c9be06650d14c3fe99f4dc338c949d8cf13a2f43138096db24bdd05196f866"
 
       define_method(:install) do
         bin.install "go-go-objects"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/go-go-objects/releases/download/v0.0.2/go-go-objects_0.0.2_darwin_arm64.tar.gz"
-      sha256 "1b55c5eebe0839ec8d83a3210e29fc37e2d6977e40c4212addffbd6c7d08ae94"
+      url "https://github.com/go-go-golems/go-go-objects/releases/download/v0.0.1/go-go-objects_0.0.1_darwin_arm64.tar.gz"
+      sha256 "f42743f3fd83c7d762068e37a16dc6bcf2da484c8a6af3372c37db38dec165a5"
 
       define_method(:install) do
         bin.install "go-go-objects"
@@ -28,15 +28,15 @@ class GoGoObjects < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-go-objects/releases/download/v0.0.2/go-go-objects_0.0.2_linux_amd64.tar.gz"
-      sha256 "9314b9e1ad4e004d9ce423cae0f11816efdbc744158826e73c2a37bad3fbe599"
+      url "https://github.com/go-go-golems/go-go-objects/releases/download/v0.0.1/go-go-objects_0.0.1_linux_amd64.tar.gz"
+      sha256 "92c42162b60586e1183efeb6c1dc9411aa077440393294ffa1fb022b7393330e"
       define_method(:install) do
         bin.install "go-go-objects"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-go-objects/releases/download/v0.0.2/go-go-objects_0.0.2_linux_arm64.tar.gz"
-      sha256 "1663db91a39ae78cf96f0f22e2edf837a035eec7ae691d64209113ca56f4afa0"
+      url "https://github.com/go-go-golems/go-go-objects/releases/download/v0.0.1/go-go-objects_0.0.1_linux_arm64.tar.gz"
+      sha256 "e28648a2dbb5ed089974a9851f9b25c6834c8d5496c954a8c3d9a9182c683701"
       define_method(:install) do
         bin.install "go-go-objects"
       end
