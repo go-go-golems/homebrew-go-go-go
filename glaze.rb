@@ -5,20 +5,20 @@
 class Glaze < Formula
   desc "Glaze is a tool for converting structured data"
   homepage "https://github.com/go-go-golems/glazed"
-  version "1.3.6"
+  version "1.3.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/glazed/releases/download/v1.3.6/glaze_1.3.6_darwin_amd64.tar.gz"
-      sha256 "832ae73199689fa565453c71c4cfb1013a8e0c0abbdddc83b5b7f23316b3bbf9"
+      url "https://github.com/go-go-golems/glazed/releases/download/v1.3.7/glaze_1.3.7_darwin_amd64.tar.gz"
+      sha256 "5f04824231afab927fa7b12fb7d796efb29ccec83b55a0cd7112f0ea44740b12"
 
       define_method(:install) do
         bin.install "glaze"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/glazed/releases/download/v1.3.6/glaze_1.3.6_darwin_arm64.tar.gz"
-      sha256 "24136a3a0a76662411283737c270398992b09bc2cf181a1bf18b6efe59ad7098"
+      url "https://github.com/go-go-golems/glazed/releases/download/v1.3.7/glaze_1.3.7_darwin_arm64.tar.gz"
+      sha256 "cb570c26a455bc4c57e34ada553573bac5bd41d5699a62529e7afa853b04e59e"
 
       define_method(:install) do
         bin.install "glaze"
@@ -28,15 +28,15 @@ class Glaze < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/glazed/releases/download/v1.3.6/glaze_1.3.6_linux_amd64.tar.gz"
-      sha256 "8ea78149581b1d18651fe73cf8b49dc47beeb59b10ad51e5ff767256ef3c7dbc"
+      url "https://github.com/go-go-golems/glazed/releases/download/v1.3.7/glaze_1.3.7_linux_amd64.tar.gz"
+      sha256 "8e208cf19a29da81cae4c1c8fdd4582eecccfaf3c594dca5342d8e932388a835"
       define_method(:install) do
         bin.install "glaze"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/glazed/releases/download/v1.3.6/glaze_1.3.6_linux_arm64.tar.gz"
-      sha256 "594ecd3b5896d00af970dfddba7c9135e284ad0f40e1751357972510a141bd18"
+      url "https://github.com/go-go-golems/glazed/releases/download/v1.3.7/glaze_1.3.7_linux_arm64.tar.gz"
+      sha256 "654ea8dc130a867c85a59c66910d16389f6d0c40a60b5fa50d744a3615e998ed"
       define_method(:install) do
         bin.install "glaze"
       end
