@@ -5,20 +5,20 @@
 class GojaBleve < Formula
   desc "goja-bleve is a tool"
   homepage "https://github.com/go-go-golems/goja-bleve"
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/goja-bleve/releases/download/v0.0.5/goja-bleve_0.0.5_darwin_amd64.tar.gz"
-      sha256 "c4c32353c504c1038fe082c0ac553e58cd9900552b221eba239a44c0d369c310"
+      url "https://github.com/go-go-golems/goja-bleve/releases/download/v0.0.6/goja-bleve_0.0.6_darwin_amd64.tar.gz"
+      sha256 "8c5c2569e37291824c58b4a5c184c76e00a4b124d15621a26ee4e972bbae6637"
 
       define_method(:install) do
         bin.install "goja-bleve"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/goja-bleve/releases/download/v0.0.5/goja-bleve_0.0.5_darwin_arm64.tar.gz"
-      sha256 "2b1fd48b81eccd913ea29a0336612ebe5af0b9bba02a93827e186f00baf0c026"
+      url "https://github.com/go-go-golems/goja-bleve/releases/download/v0.0.6/goja-bleve_0.0.6_darwin_arm64.tar.gz"
+      sha256 "c76d60a02cf43d9df4b89b052f2ccff54bd6f906bc1c6d0c968fd164c7ec22f8"
 
       define_method(:install) do
         bin.install "goja-bleve"
@@ -28,15 +28,15 @@ class GojaBleve < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/goja-bleve/releases/download/v0.0.5/goja-bleve_0.0.5_linux_amd64.tar.gz"
-      sha256 "4df560ea8aff6776693c2d530f4bf664cdc6cd86a9015b350f3a897af21216c4"
+      url "https://github.com/go-go-golems/goja-bleve/releases/download/v0.0.6/goja-bleve_0.0.6_linux_amd64.tar.gz"
+      sha256 "0d3e64ec2b60d50f2190a3ba539dc6d7f17a86dc667ec7aac0214020a1b92420"
       define_method(:install) do
         bin.install "goja-bleve"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/goja-bleve/releases/download/v0.0.5/goja-bleve_0.0.5_linux_arm64.tar.gz"
-      sha256 "24b4e1554a56ea1e6f14799c03abfe6b47901ee49a8669e8366dd62f74a2ccfb"
+      url "https://github.com/go-go-golems/goja-bleve/releases/download/v0.0.6/goja-bleve_0.0.6_linux_arm64.tar.gz"
+      sha256 "c5f16283af660d76c28b9008befe0162258b1fad7c959ba16f59c0ec29235ab2"
       define_method(:install) do
         bin.install "goja-bleve"
       end
