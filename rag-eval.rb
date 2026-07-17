@@ -5,20 +5,20 @@
 class RagEval < Formula
   desc "RAG evaluation system CLI and web server"
   homepage "https://github.com/go-go-golems/rag-evaluation-system"
-  version "0.1.6"
+  version "0.1.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/rag-evaluation-system/releases/download/v0.1.6/rag-evaluation-system_0.1.6_darwin_amd64.tar.gz"
-      sha256 "7febadf3819fd00858d479c210477381d45d69894f601c0db5af666c0d1a5c64"
+      url "https://github.com/go-go-golems/rag-evaluation-system/releases/download/v0.1.7/rag-evaluation-system_0.1.7_darwin_amd64.tar.gz"
+      sha256 "e2822984c298c1bdcc1de565c1c6fa44911a1ce9c57379e975fdb1181b17bcde"
 
       define_method(:install) do
         bin.install "rag-eval"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/rag-evaluation-system/releases/download/v0.1.6/rag-evaluation-system_0.1.6_darwin_arm64.tar.gz"
-      sha256 "1bfe37851fb16ff3179b193aa86f8081c6410e84cae52deccde81fdf9a36849d"
+      url "https://github.com/go-go-golems/rag-evaluation-system/releases/download/v0.1.7/rag-evaluation-system_0.1.7_darwin_arm64.tar.gz"
+      sha256 "6876ab1708c2ed884ed40f20dbc8bee65326a1fd3fbc1a30409730b0994aba13"
 
       define_method(:install) do
         bin.install "rag-eval"
@@ -28,15 +28,15 @@ class RagEval < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/rag-evaluation-system/releases/download/v0.1.6/rag-evaluation-system_0.1.6_linux_amd64.tar.gz"
-      sha256 "c4136e3045400091d25d6a806eefffb3ebc24a5c3ed29f9336a3dcfe2ac4c278"
+      url "https://github.com/go-go-golems/rag-evaluation-system/releases/download/v0.1.7/rag-evaluation-system_0.1.7_linux_amd64.tar.gz"
+      sha256 "b49a802180e1fdc1f412d44859583f8df61a899346b44803e5656a511d7d2284"
       define_method(:install) do
         bin.install "rag-eval"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/rag-evaluation-system/releases/download/v0.1.6/rag-evaluation-system_0.1.6_linux_arm64.tar.gz"
-      sha256 "92148143f9b0bb16da3e60ca378ed4880188f7b340eddeab7ef146457bf25d3a"
+      url "https://github.com/go-go-golems/rag-evaluation-system/releases/download/v0.1.7/rag-evaluation-system_0.1.7_linux_arm64.tar.gz"
+      sha256 "adc55b7214eff8083a4ee22b26afbe6ac40b66ec637254104fbedf2697ba43f7"
       define_method(:install) do
         bin.install "rag-eval"
       end
