@@ -5,20 +5,20 @@
 class GoMinitrace < Formula
   desc "Glazed-based Go port of minitrace, focused first on Claude Code and Codex session conversion."
   homepage "https://github.com/go-go-golems/go-minitrace"
-  version "0.2.7"
+  version "0.2.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/go-go-golems/go-minitrace/releases/download/v0.2.7/go-minitrace_0.2.7_darwin_amd64.tar.gz"
-      sha256 "516041db6a6f830501d8c4f0bf33bf3069585c1404c993b9739baf5fb54fdab5"
+      url "https://github.com/go-go-golems/go-minitrace/releases/download/v0.2.8/go-minitrace_0.2.8_darwin_amd64.tar.gz"
+      sha256 "117c6fe1eb5bda56b3a7b661f824cc3135fdeef792c8cd08ef466bd3a10e370f"
 
       define_method(:install) do
         bin.install "go-minitrace"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/go-go-golems/go-minitrace/releases/download/v0.2.7/go-minitrace_0.2.7_darwin_arm64.tar.gz"
-      sha256 "ba92367b12f47b282e513fd87eb53a4d94b70be0800e4d984af1ec55461f93f6"
+      url "https://github.com/go-go-golems/go-minitrace/releases/download/v0.2.8/go-minitrace_0.2.8_darwin_arm64.tar.gz"
+      sha256 "901d57edb88b2fddfbd207a9ed178563edfbb562e0bdb115ff0c40f6240e8f95"
 
       define_method(:install) do
         bin.install "go-minitrace"
@@ -28,15 +28,15 @@ class GoMinitrace < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-minitrace/releases/download/v0.2.7/go-minitrace_0.2.7_linux_amd64.tar.gz"
-      sha256 "3f2638e029983dd72968caf3fc195fc09d530af7a72b96765105709bc8641a7e"
+      url "https://github.com/go-go-golems/go-minitrace/releases/download/v0.2.8/go-minitrace_0.2.8_linux_amd64.tar.gz"
+      sha256 "42be8417f51565a7e449234be89e5e537acfcdf1e2391111d4f7125821425503"
       define_method(:install) do
         bin.install "go-minitrace"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/go-go-golems/go-minitrace/releases/download/v0.2.7/go-minitrace_0.2.7_linux_arm64.tar.gz"
-      sha256 "ecd9c5cb942cc53ee7c6dfddaba08b3206e41ce60b75c5c52b7623f8d753c5a6"
+      url "https://github.com/go-go-golems/go-minitrace/releases/download/v0.2.8/go-minitrace_0.2.8_linux_arm64.tar.gz"
+      sha256 "2db2f72a16866d546b7751828ce8a3d4eb576b49cebc108a4e67031868a4da80"
       define_method(:install) do
         bin.install "go-minitrace"
       end
